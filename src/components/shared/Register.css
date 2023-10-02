@@ -1,102 +1,92 @@
-.container-reg{
+.register .container-reg {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.compensation{
+.register .compensation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-image: linear-gradient(to left, #1e549f , #5fc9f3);
+  background-image: linear-gradient(to left, #1e549f, #5fc9f3);
   padding: 20px;
-  border-radius:10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
   width: 80vw;
-
 }
 
-.compensation-1{
+.register .compensation-1 {
   color: white;
   font-weight: bold;
-  font-size: 30px
+  font-size: 30px;
 }
-.compensation-2{
+.register .compensation-2 {
   color: white;
-  font-size: 20px
+  font-size: 20px;
 }
 
-.compensation button{
+.register .compensation button {
   border-style: none;
   padding: 5px 8px;
   height: 40px;
   border-radius: 3px 3px 0 0;
-  color:#1e549f ;
+  color: #1e549f;
 }
 
-.register{
+.register .register {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
 }
 
-.card-footer{
-  background-image: linear-gradient(to left, #1e549f , #5fc9f3);
+.register .card-footer {
+  background-image: linear-gradient(to left, #1e549f, #5fc9f3);
 }
 
-.comRegIcon{
+.register .comRegIcon {
   padding: 0px;
   font-size: 100px;
   size: fit-content;
   text-align: center;
 }
 
-.icon{
+.register .icon {
   padding: 0;
 }
 
-h5.card-title{
+.register h5.card-title {
   text-align: center;
   color: white;
 }
 /* .card-footer1{
   background-image: linear-gradient(to left, #ff6f3c,  #ffc93c);
 } */
-.card-footer2{
-  background-image: linear-gradient(to left, #1e549f , #5fc9f3);
+.register .card-footer2 {
+  background-image: linear-gradient(to left, #1e549f, #5fc9f3);
 }
 
-
-div.card-body{
+.register div.card-body {
   padding: 40px;
   padding-top: 0;
   background-color: #eceefb;
 }
-p.card-text{
+.register p.card-text {
   text-align: center;
   font-size: 15px;
 }
-.registerType{
+.register .registerType {
   display: flex;
   flex-direction: row;
   row-gap: 50px;
   align-items: center;
   justify-content: space-between;
-
-
 }
 
-.registerType1,
-.registerType2{
+.register .registerType1,
+.register .registerType2 {
   width: 350px;
   margin: 10px 30px;
 }
-
-
-
-
-
-
