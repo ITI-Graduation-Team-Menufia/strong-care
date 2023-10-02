@@ -9,11 +9,10 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Slider className="mx-auto" />
-      <Footer></Footer>
+      <Slider />
       <BenefitsOverview></BenefitsOverview>
       <OurPartners></OurPartners>
-      <Slider />
+      <Footer></Footer>
     </div>
   );
 }

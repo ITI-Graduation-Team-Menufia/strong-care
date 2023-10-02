@@ -61,7 +61,6 @@ const Card = ({ card, index }) => (
         <i
           className={`fas fa-3x fa-bounce text-light ${card.icon} my-icon`}
           style={{
-            // color: "var(--primary-text)",
             "--fa-animation-delay": `${card.delay}s`,
           }}
         ></i>

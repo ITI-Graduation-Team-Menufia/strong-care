@@ -4,7 +4,7 @@
   --primary-light-bg: #57a7dc;
   --secondar-light-bg: #f37360;
   --gray-text: #6c6a6a;
-  --white--text: #fff;
+  --white-text: #fff;
   --primary-text: #416cb4;
 }
 
@@ -21,9 +21,9 @@ body {
   flex-direction: column;
 }
 
-* {
+/* * {
   color: #416cb4 !important;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
