@@ -15,5 +15,21 @@
   "email":"Your E-mail ",
   "phone":"Phone Number ",
   "message":"Message ", 
-  "send":"Send"
+  "send":"Send",
+  "contact-us": "Contact Us",
+  "Our Partners": "Our Partners",
+  "Compensation": "Compensation",
+  "Guaranteed compensation": "Guaranteed compensation",
+  "Secure Payment": "Secure Payment",
+  "100% Secure Payment": "100% Secure Payment",
+  "Best Price": "Best Price",
+  "Guaranteed Low Cost": "Guaranteed Low Cost",
+  "Fast Response": "Fast Response",
+  "Efficient Client Response": "Efficient Client Response",
+  "claimsAndCompensations": "Claims and Compensations",
+  "investors": "Investors",
+  "aboutUs": "About Us",
+  "login": "Login",
+  "loginAsCorporation": "Login As Corporation",
+  "loginAsIndividual": "Login As Individual"
 }

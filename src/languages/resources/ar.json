@@ -15,6 +15,20 @@
   "email":"البريد الالكتروني",
   "phone":"رقم الجوال",
   "message":"نص الرسالة", 
-  "send":"إرسال"
-  
+  "send":"إرسال",
+  "Our Partners": "شركائنا",
+  "Compensation": "تعويض",
+  "Guaranteed compensation": "تعويض مضمون",
+  "Secure Payment": "دفع آمن",
+  "100% Secure Payment": "100% دفع آمن",
+  "Best Price": "أفضل سعر",
+  "Guaranteed Low Cost": "اسعارنا منافسة",
+  "Fast Response": "سرعة الاستجابه",
+  "Efficient Client Response": "سرعة الاستجابه وتواصل مع العملاء"
+  "claimsAndCompensations": "المطالبات والتعويض",
+  "investors": "المستثمرون",
+  "aboutUs": "من نحن",
+  "login": "الدخول",
+  "loginAsCorporation": "التسجيل ك شركة",
+  "loginAsIndividual": "التسجيل ك فرد"
 }
