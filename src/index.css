@@ -4,7 +4,8 @@
   --primary-light-bg: #57a7dc;
   --secondar-light-bg: #f37360;
   --gray-text: #6c6a6a;
-  --white-text: #fff;
+  --white--text: #fff;
+  --primary-text: #416cb4;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
@@ -27,4 +28,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.partners-container {
+  position: relative;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-bg);
+  position: relative;
+  z-index: 1;
 }
