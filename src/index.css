@@ -8,13 +8,21 @@
   --primary-text: #416cb4;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Cairo" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-bg) !important;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  color: #416cb4 !important;
 }
 
 code {
