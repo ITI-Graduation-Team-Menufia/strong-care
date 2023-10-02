@@ -5,6 +5,7 @@
   --secondar-light-bg: #f37360;
   --gray-text: #6c6a6a;
   --white--text: #fff;
+  --primary-text: #416cb4;
 }
 
 body {
@@ -19,4 +20,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.partners-container {
+  position: relative;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-bg);
+  position: relative;
+  z-index: 1;
 }
