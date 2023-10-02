@@ -1,3 +1,9 @@
 * {
-  color: var(#416cb4);
+  color: var(#416cb4) !important;
+}
+
+
+
+ul li {
+  margin-left: 1rem;
 }

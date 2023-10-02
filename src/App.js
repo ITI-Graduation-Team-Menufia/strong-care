@@ -4,7 +4,7 @@ import Navbar from "./components/shared/Navbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-100 d-flex-column">
       <Navbar></Navbar>
       <Slider />
     </div>
