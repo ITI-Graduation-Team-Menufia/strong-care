@@ -1,4 +1,10 @@
 {
   "home": "Home",
-  "contact-us": "Contact Us"
+  "contact-us": "Contact Us",
+  "claimsAndCompensations": "Claims and Compensations",
+  "investors": "Investors",
+  "aboutUs": "About Us",
+  "login": "Login",
+  "loginAsCorporation": "Login As Corporation",
+  "loginAsIndividual": "Login As Individual"
 }
