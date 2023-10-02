@@ -84,7 +84,21 @@ const OurPartners = () => {
         <Trans i18nKey="Our Partners">Our Partners</Trans>
       </h1>
       <div className="container-fluid py-2 px-2">
-        <Splide options={{ perPage, gap: 10, drag: true, arrows: false }}>
+        <Splide
+          options={{
+            perPage,
+            gap: 10,
+            drag: true,
+            arrows: false,
+            autoplay: true,
+            interval: 2000,
+            pauseOnHover: true,
+            loop: true,
+            autoHeight: true,
+            rewind: true,
+            speed: 2000,
+          }}
+        >
           {partners.map((item) => (
             <SplideSlide key={item.id}>
               <div className="px-5 ">
