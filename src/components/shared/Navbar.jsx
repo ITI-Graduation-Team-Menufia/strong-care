@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" dir="rtl">
       <div className="container fw-bold">
-        <a className="navbar-brand" href="#">
+        <span className="navbar-brand" >
           <img src={logo} alt="Bootstrap" width="100" />
-        </a>
+        </span>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,48 +27,48 @@ export default function Navbar() {
         >
           <ul className="navbar-nav ">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <span className="nav-link" aria-current="page" >
                 <Trans i18nKey="home"></Trans>
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <span className="nav-link" aria-current="page" >
                 <Trans i18nKey="claimsAndCompensations"></Trans>
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <span className="nav-link" >
                 <Trans i18nKey="investors"></Trans>
-              </a>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <span className="nav-link" >
                 <Trans i18nKey="aboutUs"> </Trans>
-              </a>
+              </span>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <span
                 className="nav-link dropdown-toggle p-1"
-                href="#"
+                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i className="bi bi-person p-1 lead"></i>
                 <Trans i18nKey="login"></Trans>
-              </a>
+              </span>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item text-center" href="#">
+                  <span className="dropdown-item text-center" >
                     <i className="bi bi-people-fill p-1 lead"></i>
                     <Trans i18nKey="loginAsCorporation"></Trans>
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a className="dropdown-item text-center" href="#">
+                  <span className="dropdown-item text-center" >
                     <i className="bi bi-person-fill p-1 lead"></i>
                     <Trans i18nKey="loginAsIndividual"></Trans>
-                  </a>
+                  </span>
                 </li>
               </ul>
             </li>
