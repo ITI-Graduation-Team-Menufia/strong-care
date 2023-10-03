@@ -13,12 +13,11 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Slider />
-      <About ></About>
-      <ContactUSForm className="mt-5"></ContactUSForm>
-      <Register/>
       <BenefitsOverview></BenefitsOverview>
       <OurPartners></OurPartners>
       <Register />
+      <About></About>
+      <ContactUSForm></ContactUSForm>
       <Footer></Footer>
     </div>
   );

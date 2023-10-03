@@ -5,7 +5,7 @@ import React from "react";
 import { Trans } from "react-i18next";
 export default function ContactUSForm() {
   //adding inputs dynamially
-  const Input = ({  type, id, placeholder }) => {
+  const Input = ({ type, id, placeholder }) => {
     return (
       <input
         id={id}
@@ -33,20 +33,20 @@ export default function ContactUSForm() {
                 <label htmlFor="name" className="gray-text">
                   <Trans i18nKey="name"></Trans>
                 </label>
-                <Input type="text" id={name} name="name" placeholder={"name"} />
+                <Input type="text" id={name} name="name" placeholder="" />
               </div>
             </div>
             <div className="email">
               <label htmlFor="email" className="gray-text">
                 <Trans i18nKey="email"></Trans>
               </label>
-              <Input type="email" name="email" placeholder={"email"} />
+              <Input type="email" name="email" placeholder="" />
             </div>
             <div className="phone">
               <label htmlFor="phone" className="gray-text">
                 <Trans i18nKey="phone"></Trans>
               </label>
-              <Input type="phone" name="phone" placeholder={"phone"} />
+              <Input type="phone" name="phone" placeholder="" />
             </div>
             <div className="msg">
               <label htmlFor="msg" className="gray-text">
@@ -56,11 +56,11 @@ export default function ContactUSForm() {
                 className=" form-control w-75 font-medium border rounded-0 mb-3 mt-2 mx-auto border-slate-300 placeholder:opacity-60"
                 type="text"
                 name="msg"
-                placeholder={"message"}
+                placeholder=""
               />
             </div>
             .
-            <button className="request-btn mb-2 form-btn">
+            <button className="btn btn-primary px-5">
               <Trans i18nKey="send"></Trans>
             </button>
           </form>
