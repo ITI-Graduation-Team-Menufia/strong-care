@@ -1,8 +1,11 @@
-.register .container-reg {
+/* .register .container-reg {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.register * {
+  border: 2px red sol;
 }
 
 .register .compensation {
@@ -61,9 +64,9 @@
   text-align: center;
   color: white;
 }
-/* .card-footer1{
-  background-image: linear-gradient(to left, #ff6f3c,  #ffc93c);
-} */
+.card-footer1 {
+  background-image: linear-gradient(to left, #ff6f3c, #ffc93c);
+}
 .register .card-footer2 {
   background-image: linear-gradient(to left, #1e549f, #5fc9f3);
 }
@@ -89,4 +92,4 @@
 .register .registerType2 {
   width: 350px;
   margin: 10px 30px;
-}
+} */

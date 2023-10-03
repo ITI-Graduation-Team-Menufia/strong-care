@@ -7,6 +7,7 @@ import Footer from "./components/shared/Footer";
 import Navbar from "./components/shared/Navbar";
 // import Register from "./components/shared/Register";
 import OurPartners from "./components/OurPartners";
+import Register from "./components/shared/Register";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar></Navbar>
       <Slider />
       <BenefitsOverview></BenefitsOverview>
-      {/* <Register /> */}
+      <Register />
       <About></About>
       <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
