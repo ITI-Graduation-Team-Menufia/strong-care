@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary" dir="rtl">
       <div className="container fw-bold">
         <a className="navbar-brand" href="#">
-          <img src={logo} alt="Bootstrap" width="90" height="90" />
+          <img src={logo} alt="Bootstrap" width="100" />
         </a>
         <button
           className="navbar-toggler"
