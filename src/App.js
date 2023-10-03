@@ -5,7 +5,7 @@ import BenefitsOverview from "./components/BenefitsOverview";
 import Slider from "./components/Slider";
 import Footer from "./components/shared/Footer";
 import Navbar from "./components/shared/Navbar";
-import Register from "./components/shared/Register";
+// import Register from "./components/shared/Register";
 import OurPartners from "./components/OurPartners";
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
       <Navbar></Navbar>
       <Slider />
       <BenefitsOverview></BenefitsOverview>
-      <OurPartners></OurPartners>
-      <Register />
+      {/* <Register /> */}
       <About></About>
+      <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
       <Footer></Footer>
     </div>

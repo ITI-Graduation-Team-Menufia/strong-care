@@ -1,6 +1,5 @@
 /* eslint-disable no-restricted-globals */
 import "./contactUs.css";
-import { text } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
 import { Trans } from "react-i18next";
 export default function ContactUSForm() {

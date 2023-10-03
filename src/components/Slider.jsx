@@ -29,7 +29,7 @@ const Slider = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}
-      className="container-fluid p-0 my-2"
+      className="container-fluid p-0 mb-5"
     >
       <div
         id="carouselExample"
