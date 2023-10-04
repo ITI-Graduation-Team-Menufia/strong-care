@@ -5,18 +5,11 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-body-tertiary text-success bg-dark"
-      dir="rtl"
-      style={{ color: "#416cb4" }}
-    >
-      <div className="container">
-        <a className="navbar-brand" href="#">
-          <img src={logo} alt="Bootstrap" width="90" height="90" />
-        </a>
-        <a className="navbar-brand" href="#">
-          <Trans i18nKey="home">Home</Trans>
-        </a>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" dir="rtl">
+      <div className="container fw-bold">
+        <span className="navbar-brand" >
+          <img src={logo} alt="Bootstrap" width="100" />
+        </span>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,50 +21,54 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul className="navbar-nav ">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                <Trans i18nKey="claimsAndCompensation">
-                  المطالبات والتعويض
-                </Trans>
-              </a>
+              <span className="nav-link" aria-current="page" >
+                <Trans i18nKey="home"></Trans>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                <Trans i18nKey="investors">المستثمرون</Trans>
-              </a>
+              <span className="nav-link" aria-current="page" >
+                <Trans i18nKey="claimsAndCompensations"></Trans>
+              </span>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                <Trans i18nKey="aboutUs">من نحن</Trans>
-              </a>
+              <span className="nav-link" >
+                <Trans i18nKey="investors"></Trans>
+              </span>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link" >
+                <Trans i18nKey="aboutUs"> </Trans>
+              </span>
             </li>
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
+              <span
+                className="nav-link dropdown-toggle p-1"
+                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <Trans i18nKey="login">الدخول</Trans>
-              </a>
+                <i className="bi bi-person p-1 lead"></i>
+                <Trans i18nKey="login"></Trans>
+              </span>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    <Trans i18nKey="action">Action</Trans>
-                  </a>
+                  <span className="dropdown-item text-center" >
+                    <i className="bi bi-people-fill p-1 lead"></i>
+                    <Trans i18nKey="loginAsCorporation"></Trans>
+                  </span>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    <Trans i18nKey="anotherAction">Another action</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    <Trans i18nKey="somethingElse">Something else here</Trans>
-                  </a>
+                  <span className="dropdown-item text-center" >
+                    <i className="bi bi-person-fill p-1 lead"></i>
+                    <Trans i18nKey="loginAsIndividual"></Trans>
+                  </span>
                 </li>
               </ul>
             </li>
