@@ -1,20 +1,4 @@
 import "./App.css";
-<<<<<<< HEAD
-import ContactUSForm from "./components/ContactUSForm";
-import FormOne from "./components/FormOne";
-import Navbar from "./components/shared/Navbar";
-import About from "./components/About";
-import FormTwo from "./components/FormTwo";
-
-function App() {
-  return (
-    <div className="App">
-      {/* <Navbar></Navbar> */}
-      {/* <About></About> */}
-      {/* <ContactUSForm></ContactUSForm> */}
-      <FormOne></FormOne>
-      <FormTwo></FormTwo>
-=======
 import About from "./components/About";
 import ContactUSForm from "./components/ContactUSForm";
 import BenefitsOverview from "./components/BenefitsOverview";
@@ -33,7 +17,6 @@ function App() {
       <BenefitsOverview></BenefitsOverview>
       <OurPartners></OurPartners>
       <Slider />
->>>>>>> 054122decf1ce2f1742af0e04f6c82ceba92fd67
     </div>
   );
 }
