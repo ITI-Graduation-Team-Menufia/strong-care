@@ -1,5 +1,4 @@
-import React from "react";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import enTranslation from "./languages/resources/en.json";
 import arTranslation from "./languages/resources/ar.json";

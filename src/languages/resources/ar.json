@@ -1,5 +1,6 @@
 {
   "home": "الصفحة الرئيسية",
+<<<<<<< HEAD
   "contact-us": "تواصل معنا", 
   "info":"بـيـانـاتـك", 
   "confirm-code":"رمز التحقق", 
@@ -18,4 +19,37 @@
 "plz":" يرجى ", 
 "confirm": "قبل المتابعة يرجى التأكد:",
 "continue":"استكمل"
+=======
+  "contact-us": "تواصل معنا",
+  "about-us": "عن شركتنـــــــــا",
+  "about-description": "شركتنا متخصصة في تقديم الضمان و الصيانه للاجهزة الالكترونية. تهدف الشركة الى توفير حماية اضافية للعملاء عند شراء اجهزة الكترونية والى تقديم المسئوليةالمالية عن الشركات.",
+  "distinguish": "ما يميزنا",
+  "coverage": "تغطية شاملة",
+  "customer-service": "خدمه عملاء متميزة",
+  "easy-usage": "سهولة الاستخدام",
+  "quality-of-service": "جودة الخدمة",
+  "login-as-a-comany": "تسجيل كشركة",
+  "compensation-request": "طلب تعويض",
+  "contact-with-us":"تواصل معنـــــــــا", 
+  "name":"الاسم",
+  "email":"البريد الالكتروني",
+  "phone":"رقم الجوال",
+  "message":"نص الرسالة", 
+  "send":"إرسال",
+  "Our Partners": "شركائنا",
+  "Compensation": "تعويض",
+  "Guaranteed compensation": "تعويض مضمون",
+  "Secure Payment": "دفع آمن",
+  "100% Secure Payment": "100% دفع آمن",
+  "Best Price": "أفضل سعر",
+  "Guaranteed Low Cost": "اسعارنا منافسة",
+  "Fast Response": "سرعة الاستجابه",
+  "Efficient Client Response": "سرعة الاستجابه وتواصل مع العملاء"
+  "claimsAndCompensations": "المطالبات والتعويض",
+  "investors": "المستثمرون",
+  "aboutUs": "من نحن",
+  "login": "الدخول",
+  "loginAsCorporation": "التسجيل ك شركة",
+  "loginAsIndividual": "التسجيل ك فرد"
+>>>>>>> 054122decf1ce2f1742af0e04f6c82ceba92fd67
 }
