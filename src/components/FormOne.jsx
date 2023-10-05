@@ -19,7 +19,7 @@ export default function FormOne() {
             required
             placeholder={t("company-name")}
           />
-          <div class="invalid-feedback">
+          <div class="invalid-feedback text-danger">
             <Trans i18nKey="plz-enter"></Trans>
             <Trans i18nKey="company-name"></Trans>
           </div>

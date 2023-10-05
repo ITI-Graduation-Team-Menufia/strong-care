@@ -18,12 +18,12 @@ export default function FormTwo() {
           <div className=" mb-4 m-auto w-75">
             <input
               type="text"
-              className="form-control is-invalid rounded-0 border-0 border-bottom border-black-50 mb-1"
+              className="form-control is-invalid rounded-0 border-0 border-bottom border-black-50 mb-3"
               id="validationServer01"
               required
               placeholder={t("area")}
             />
-            <div class="invalid-feedback"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="area"></Trans></div>
+            <div class="invalid-feedback text-danger"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="area"></Trans></div>
           </div>
           <div className=" mb-4 m-auto w-75">
             <input
