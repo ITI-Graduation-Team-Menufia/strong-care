@@ -18,28 +18,28 @@ const benefitCards = [
     title: "Compensation",
     text: "Guaranteed compensation",
     icon: "fa-balance-scale",
-    bgColor: "--primary-light-bg",
+    bgColor: "--primary-bg",
     delay: 1,
   },
   {
     title: "Secure Payment",
     text: "100% Secure Payment",
     icon: "fa-shield-alt",
-    bgColor: "--primary-light-bg",
+    bgColor: "--primary-bg",
     delay: 2,
   },
   {
     title: "Best Price",
     text: "Guaranteed Low Cost",
     icon: "fa-sack-dollar",
-    bgColor: "--primary-light-bg",
+    bgColor: "--primary-bg",
     delay: 3,
   },
   {
     title: "Fast Response",
     text: "Efficient Client Response",
     icon: "fa-tachometer-alt",
-    bgColor: "--primary-light-bg",
+    bgColor: "--primary-bg",
     delay: 4,
   },
 ];
@@ -61,7 +61,6 @@ const Card = ({ card, index }) => (
         <i
           className={`fas fa-3x fa-bounce text-light ${card.icon} my-icon`}
           style={{
-            // color: "var(--primary-text)",
             "--fa-animation-delay": `${card.delay}s`,
           }}
         ></i>
