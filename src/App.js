@@ -20,6 +20,7 @@ function App() {
       <About></About>
       <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
+
       <Footer></Footer>
     </div>
   );
