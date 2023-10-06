@@ -12,15 +12,15 @@ import FormTwo from "./components/FormTwo";
 function App() {
   return (
     <div className="App h-100 d-flex-column">
-      {/* <Navbar></Navbar> */}
-      {/* <About ></About> */}
-      {/* <ContactUSForm className="mt-5"></ContactUSForm> */}
-      {/* <Register/> */}
-      {/* <BenefitsOverview></BenefitsOverview> */}
-      {/* <OurPartners></OurPartners> */}
+      <Navbar></Navbar>
+      <About ></About>
+      <ContactUSForm className="mt-5"></ContactUSForm>
+      <Register/>
+      <BenefitsOverview></BenefitsOverview>
+      <OurPartners></OurPartners>
       <FormOne></FormOne>
       <FormTwo></FormTwo>
-      {/* <Slider /> */}
+      <Slider />
     </div>
   );
 }
