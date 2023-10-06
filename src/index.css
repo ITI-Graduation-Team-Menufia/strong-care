@@ -21,15 +21,10 @@ body {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-* {
-  /* color: #416cb4 !important; */
-=======
 .main-shadow {
   -webkit-box-shadow: 0px 0px 8px -3px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 0px 8px -3px rgba(66, 68, 90, 1);
   box-shadow: 0px 0px 8px -3px rgba(66, 68, 90, 1);
->>>>>>> 8174dd6c29a2955301b9fc757ffe0fc812e07218
 }
 
 code {
