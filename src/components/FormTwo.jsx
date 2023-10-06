@@ -9,8 +9,8 @@ export default function FormTwo() {
     <div>
       <div
         className="container-fluid shadow p-3 mt-3 col-12 col-xxl-7 col-xl-7 col-lg-8 col-md-8 col-sm-10"
-        dir="rtl"
-      >
+     dir="rtl"
+     >
         <h2 className="fs-2 text-center my-4 primary-text">
           <Trans i18nKey="info"></Trans>
         </h2>
@@ -95,7 +95,7 @@ export default function FormTwo() {
             
             <Trans i18nKey="confirm"></Trans>
             <li className=" mt-3 m-1"><Trans i18nKey="records-num"></Trans></li>
-            <li><Trans i18nKey="legal-name"></Trans></li>
+            <li className="m-1"><Trans i18nKey="legal-name"></Trans></li>
             </ul>
 
         </div>
