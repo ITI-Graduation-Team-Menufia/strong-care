@@ -80,7 +80,7 @@ const OurPartners = () => {
 
   return (
     <div>
-      <h1 className="partners-title text-center py-2">
+      <h1 className="partners-title text-center py-2 display-4">
         <Trans i18nKey="Our Partners">Our Partners</Trans>
       </h1>
       <div className="container-fluid py-2 px-2">
