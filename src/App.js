@@ -1,15 +1,23 @@
 import "./App.css";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import Review from "./components/shared/Review";
 import ConfirmationCode from "./components/shared/ConfirmationCode";
+=======
+// import BenefitsOverview from "./components/BenefitsOverview";
+// import Slider from "./components/Slider";
+>>>>>>> b9312c2cb565f9911b4bc94f3ba4a99a91cdc7ae
 // import Navbar from "./components/shared/Navbar";
 // import Register from "./components/shared/Register";
+// import OurPartners from "./components/OurPartners";
+import Review from "./components/shared/Review";
 
 function App() {
   return (
     <div >
       {/* <Navbar></Navbar>
+<<<<<<< HEAD
       <Register/> */}
       <ConfirmationCode/>
       {/* <Review/> */}
@@ -42,8 +50,22 @@ function App() {
       <ContactUSForm></ContactUSForm>
       <Footer></Footer>
 >>>>>>> 8174dd6c29a2955301b9fc757ffe0fc812e07218
+=======
+      <Register/>
+      <BenefitsOverview></BenefitsOverview>
+      <OurPartners></OurPartners>
+      <Slider /> */}
+      <Review/>
+>>>>>>> b9312c2cb565f9911b4bc94f3ba4a99a91cdc7ae
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
