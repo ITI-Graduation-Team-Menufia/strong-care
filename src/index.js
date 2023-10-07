@@ -9,6 +9,11 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/js/all.min.js";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./i18n";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
