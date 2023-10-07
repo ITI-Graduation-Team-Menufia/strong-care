@@ -8,6 +8,7 @@ import Navbar from "./components/shared/Navbar";
 // import Register from "./components/shared/Register";
 import OurPartners from "./components/OurPartners";
 import Register from "./components/shared/Register";
+import CompanyProfile from "./components/CompanyProfile";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <About></About>
       <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
+
       <Footer></Footer>
     </div>
   );
