@@ -86,13 +86,12 @@ export default function FormTwo() {
           </div>
 
           <div className=" m-auto">
-            <button className="request-btn mb-4" type="submit" >
+            <button className="request-btn mb-4 text-white" type="submit" >
               <Trans i18nKey="confirm-code"></Trans>
             </button>
           </div>
           <div className="confirm text-center col-lg-4 col-sm-6 py-2 fw-semibold  m-auto border">
           <ul>
-            
             <Trans i18nKey="confirm"></Trans>
             <li className=" mt-3 m-1"><Trans i18nKey="records-num"></Trans></li>
             <li className="m-1"><Trans i18nKey="legal-name"></Trans></li>

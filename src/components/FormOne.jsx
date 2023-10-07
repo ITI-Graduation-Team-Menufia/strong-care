@@ -77,7 +77,7 @@ export default function FormOne() {
           </div> */}
         </div>
 
-        <div className=" m-auto">
+        <div className=" m-auto text-white">
           <button className="request-btn" type="submit">
             <Trans i18nKey="continue"></Trans>
           </button>
