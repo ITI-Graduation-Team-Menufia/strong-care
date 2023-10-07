@@ -30,5 +30,8 @@
   "aboutUs": "من نحن",
   "login": "الدخول",
   "loginAsCorporation": "التسجيل ك شركة",
-  "loginAsIndividual": "التسجيل ك فرد"
+  "loginAsIndividual": "التسجيل ك فرد",
+  "waiting-review": "طلبك قيد المراجعة",
+  "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت"
+  
 }

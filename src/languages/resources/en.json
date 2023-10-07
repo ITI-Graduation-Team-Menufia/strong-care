@@ -31,5 +31,7 @@
   "aboutUs": "About Us",
   "login": "Login",
   "loginAsCorporation": "Login As Corporation",
-  "loginAsIndividual": "Login As Individual"
+  "loginAsIndividual": "Login As Individual",
+  "waiting-review1":"Your request rsbeing reviewed",
+  "waiting-review2": "We Will Review Your request and contact you soon"
 }

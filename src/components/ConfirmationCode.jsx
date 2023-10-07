@@ -1,6 +1,7 @@
 
 import React from 'react';
 import "./ConfirmationCode.css";
+import { Trans } from "react-i18next";
 
 export default function ConfirmationCode() {
   return (
@@ -8,7 +9,7 @@ export default function ConfirmationCode() {
       <div className=" d-flex flex-column justify-content-center align-items-center center-item pt-5" style={{width: "25rem", height:"30rem",margin:"auto"}}>
         <i className="fa-solid fa-unlock-keyhole w-100 " style={{color: "#0d6efd" , fontSize:"100px", height:"100px "}}></i>
         <div className="card-body d-flex flex-column justify-content-start align-items-center w-100  mt-5">
-          <h5 dir="rtl" className="text-dark font-weight-bold">ادخل كود التأكيد</h5>
+          <h5 dir="rtl" className="text-dark font-weight-bold"><Trans i18nKey="waiting-review2" values="ar">ادخل كود التأكيد</Trans></h5>
           <input type='text' placeholder='code' class="w-700 rounded border border-secondary mt-3 p-2 " style={{width: "25rem"}}/>
           <button type="button" class="btn btn-lg mt-3" style={{ backgroundColor:"#0d6efd", color:"white"}}>Submit</button>
         </div>
