@@ -4,6 +4,8 @@ import ContactUSForm from "./components/ContactUSForm";
 import BenefitsOverview from "./components/BenefitsOverview";
 import Slider from "./components/Slider";
 import OurPartners from "./components/OurPartners";
+import FormOne from "./components/FormOne";
+import FormTwo from "./components/FormTwo";
 import Register from "./components/shared/Register";
 import { Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
@@ -22,6 +24,8 @@ function App() {
       <About></About>
       <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
+      <FormOne></FormOne>
+      <FormTwo></FormTwo>
       <Footer></Footer>
       <CompanyProfile></CompanyProfile>
       <Review></Review>
