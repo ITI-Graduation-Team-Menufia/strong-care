@@ -16,7 +16,6 @@
   "phone":"Phone Number ",
   "message":"Message ", 
   "send":"Send",
-  "contact-us": "Contact Us",
   "Our Partners": "Our Partners",
   "Compensation": "Compensation",
   "Guaranteed compensation": "Guaranteed compensation",
@@ -31,5 +30,6 @@
   "aboutUs": "About Us",
   "login": "Login",
   "loginAsCorporation": "Login As Corporation",
-  "loginAsIndividual": "Login As Individual"
+  "loginAsIndividual": "Login As Individual",
+  "personalProfile": "Personal Profile"
 }
