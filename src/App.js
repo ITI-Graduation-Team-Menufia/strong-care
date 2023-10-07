@@ -24,9 +24,9 @@ function App() {
       <About></About>
       <OurPartners></OurPartners>
       <ContactUSForm></ContactUSForm>
+      <Footer></Footer>
       <FormOne></FormOne>
       <FormTwo></FormTwo>
-      <Footer></Footer>
       <CompanyProfile></CompanyProfile>
       <Review></Review>
       <ConfirmationCode></ConfirmationCode>
