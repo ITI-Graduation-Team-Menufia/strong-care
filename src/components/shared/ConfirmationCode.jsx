@@ -1,6 +1,5 @@
-
 import React from 'react';
-import "./ConfirmationCode.css";
+// import "./ConfirmationCode.css";
 
 export default function ConfirmationCode() {
   return (
