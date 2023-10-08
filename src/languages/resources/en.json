@@ -62,6 +62,17 @@
   "create-warranty-contract":"Create warranty contact",
   "waiting-review1":"Your request rsbeing reviewed",
   "waiting-review2": "We Will Review Your request and contact you soon",
-  "enterOTP":"Enter Confirmation Code"
+  "enterOTP":"Enter Confirmation Code",
+  "client-name":"Client Name", 
+  "device-company":"Device Company", 
+  "device-type":"Device Type", 
+  "device-color":"Device Color ", 
+  "warranty-period":"Warranty Period",
+  "one-year":"One Year", 
+  "two-year":"Two Years", 
+  "device-serial-number":"Device Serial Number", 
+  "purchase-date":"Purchase Date", 
+  "agent identification number":"Agent Identification Number", 
+  "shop-name":"Shop Name"
 
 }

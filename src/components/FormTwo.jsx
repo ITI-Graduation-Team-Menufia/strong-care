@@ -23,7 +23,7 @@ export default function FormTwo() {
               required
               placeholder={t("area")}
             />
-            <div class="invalid-feedback text-danger"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="area"></Trans></div>
+            <div className="invalid-feedback text-danger"><Trans i18nKey="please-enter"></Trans> <Trans i18nKey="area"></Trans></div>
           </div>
           <div className=" mb-4 m-auto w-75">
             <input
@@ -33,7 +33,7 @@ export default function FormTwo() {
               required
               placeholder={t("records-num")}
             />
-            {/* <div class="invalid-feedback"> <Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="records-num"></Trans></div> */}
+            {/* <div className"invalid-feedback"> <Trans i18nKey="please-enter"></Trans> <Trans i18nKey="records-num"></Trans></div> */}
           </div>
           <div className=" mb-4 m-auto w-75">
             <input
@@ -43,7 +43,7 @@ export default function FormTwo() {
               required
               placeholder={t("legal-name")}
             />
-            {/* <div class="invalid-feedback"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="legal-name"></Trans></div> */}
+            {/* <div className"invalid-feedback"><Trans i18nKey="please-enter"></Trans> <Trans i18nKey="legal-name"></Trans></div> */}
           </div>
           <div className=" mb-4 m-auto w-75">
             <input
@@ -53,7 +53,7 @@ export default function FormTwo() {
               required
               placeholder={t("legal-office")}
             />
-            {/* <div class="invalid-feedback"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="legal-office"></Trans></div> */}
+            {/* <div className"invalid-feedback"><Trans i18nKey="please-enter"></Trans> <Trans i18nKey="legal-office"></Trans></div> */}
           </div>
 
           <div className="input-group mb-3 mb-4 m-auto w-75">
@@ -72,7 +72,7 @@ export default function FormTwo() {
             >
               <FontAwesomeIcon icon={faPaperclip} />
             </button>
-            {/* <div class="invalid-feedback"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="identity"></Trans></div> */}
+            {/* <div className"invalid-feedback"><Trans i18nKey="please-enter"></Trans> <Trans i18nKey="identity"></Trans></div> */}
           </div>
           <div className=" mb-4 m-auto w-75">
             <input
@@ -82,7 +82,7 @@ export default function FormTwo() {
               required
               placeholder={t("company-phone")}
             />
-            {/* <div class="invalid-feedback"><Trans i18nKey="plz-enter"></Trans> <Trans i18nKey="company-phone"></Trans></div> */}
+            {/* <div className"invalid-feedback"><Trans i18nKey="please-enter"></Trans> <Trans i18nKey="company-phone"></Trans></div> */}
           </div>
 
           <div className=" m-auto">

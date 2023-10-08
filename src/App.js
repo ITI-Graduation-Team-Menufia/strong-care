@@ -12,8 +12,7 @@ import { Footer, Navbar } from "./components/shared";
 import { CompanyProfile } from './components/company';
 import Review from './components/Review'
 import ConfirmationCode from './components/ConfirmationCode'
-
-
+import Warranty from './components/Warranty'
 function App() {
   return (
     <div className="App">
@@ -33,6 +32,8 @@ function App() {
       <Routes>
         <Route path="companyProfile" element={<CompanyProfile></CompanyProfile>}></Route>
       </Routes>
+
+      <Warranty></Warranty>
     </div>
   );
 }
