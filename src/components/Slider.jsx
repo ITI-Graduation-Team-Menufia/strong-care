@@ -1,14 +1,20 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { withTranslation } from "react-i18next";
+import sliderImg1 from '../assets/images/slider/1.jpg';
+import sliderImg2 from '../assets/images/slider/2.jpg';
+import sliderImg3 from '../assets/images/slider/3.jpg';
+import sliderImg4 from '../assets/images/slider/4.jpg';
+import sliderImg5 from '../assets/images/slider/5.jpg';
+
 
 const Slider = ({ t }) => {
   const images = [
-    { src: "./images/1.jpg", captionKey: "warranty" },
-    { src: "./images/2.jpg", captionKey: "multi-service" },
-    { src: "./images/3.jpg", captionKey: "long-term" },
-    { src: "./images/4.jpg", captionKey: "guaranteed" },
-    { src: "./images/5.jpg", captionKey: "response" },
+    { src: sliderImg1, captionKey: "warranty" },
+    { src: sliderImg2, captionKey: "multi-service" },
+    { src: sliderImg3, captionKey: "long-term" },
+    { src: sliderImg4, captionKey: "guaranteed" },
+    { src: sliderImg5, captionKey: "response" },
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const image = images[currentImageIndex];
