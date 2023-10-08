@@ -48,11 +48,6 @@
   "login": "الدخول",
   "loginAsCorporation": "التسجيل ك شركة",
   "loginAsIndividual": "التسجيل ك فرد",
-<<<<<<< HEAD
-  "waiting-review": "طلبك قيد المراجعة",
-  "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت"
-  
-=======
   "personalProfile": "الملف الشخصي",
   "warranty":"ضمان اونلاين بضغطة زر",
   "multi-service":"خدمة ضمان متعددة",
@@ -67,6 +62,16 @@
   "create-warranty-contract":"انشاء عقد ضمان",
   "waiting-review": "طلبك قيد المراجعة",
   "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت",
-  "enterOTP":"ادخل رمز التأكيد"
->>>>>>> 2bf5646d9abb4e897afa1c4a57b040dce612fb5a
+  "enterOTP":"ادخل رمز التأكيد",
+  "compensation":"الية المطالبة والتعويضات",
+  "client-name":"اسم العميل",
+  "requiredName":"يرجى ادخال اسم العميل",
+  "client-tel-num":"رقم الجوال",
+  "Warranty-number":"رقم الضمان",
+  "Warranty-owner":"اسم صاحب الضمان",
+  "device-model":"نوع الجهاز" ,
+  "damage" : "شرح العطل" ,
+  "photo-of-damage" : "صورة من العطل",
+  "send-compensatio-request" : "ارسال طلب التعويض"
+
 }

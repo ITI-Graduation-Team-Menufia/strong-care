@@ -48,10 +48,8 @@
   "login": "Login",
   "loginAsCorporation": "Login As Corporation",
   "loginAsIndividual": "Login As Individual",
-<<<<<<< HEAD
-  "waiting-review1":"Your request rsbeing reviewed",
-  "waiting-review2": "We Will Review Your request and contact you soon"
-=======
+ 
+
   "personalProfile": "Personal Profile",
   "warranty":"Online Warranty with the Click of a Button",
   "multi-service":"Multi-Service Warranty",
@@ -66,7 +64,16 @@
   "create-warranty-contract":"Create warranty contact",
   "waiting-review1":"Your request rsbeing reviewed",
   "waiting-review2": "We Will Review Your request and contact you soon",
-  "enterOTP":"Enter Confirmation Code"
+  "enterOTP":"Enter Confirmation Code",
+  "compensation":"Compensations",
+  "client-name" : "Client name",
+  "requiredName":"Enter your name",
+  "client-tel-num":"Phone number",
+  "Warranty-number":"Warranty number",
+  "Warranty-owner":"Warranty owner",
+  "device-model":"Device model" ,
+  "damage" : "Damage" ,
+  "photo-of-damage" : "Photo of device damage",
+  "send-compensatio-request" : "Send compensatio request"
 
->>>>>>> 2bf5646d9abb4e897afa1c4a57b040dce612fb5a
 }
