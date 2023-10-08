@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { Trans } from 'react-i18next'
 // import './company.css'
+import companyPic from '../../assets/images/company.png';
+
 const CompanyProfile = () => {
   return (
     <motion.div initial={{ opacity: 0,y:500}}
@@ -12,7 +14,7 @@ const CompanyProfile = () => {
   
       <div className="col-md-3 d-flex justify-content-center align-items-center mb-sm-3">
       <div className="position-relative">
-        <img src="./images/company.png" className="img-thumbnail img-fluid rounded" alt="Company" />
+        <img src={companyPic} className="img-thumbnail img-fluid rounded" alt="Company" />
         <i className="bi bi-pencil position-absolute bg-light opacity-100 fs-3 rounded-5 " style={{ top: '83%', left: '80%', cursor: 'pointer', transform: 'translate(-50%, -50%)' }}></i>
       </div>
     </div>
