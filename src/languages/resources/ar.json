@@ -1,6 +1,23 @@
 {
   "home": "الصفحة الرئيسية",
-  "contact-us": "تواصل معنا",
+  "contact-us": "تواصل معنا", 
+  "info":"بـيـانـاتـك", 
+  "confirm-code":"رمز التحقق", 
+  "company-name": "أسم الشركة",
+  "company-tel-num":"رقم الهاتف الخاص بالشركة", 
+  "company-email": "البريد الالكتروني الخاص بالشركة", 
+  "password": "كلمة المرور",
+  "confirm-password": "تأكيد كلمة المرور ", 
+  "area":"أسم البلد", 
+  "records-num":" رقم السجل التجاري", 
+  "legal-name":"الاسم القانوني للشركة ", 
+  "legal-office":"المقر القانوني للشركة", 
+  "identity":" هوية الشركة", 
+  "company-phone":" رقم الجوال", 
+"plz-enter":"يرجى ادخال ",
+"plz":" يرجى ", 
+"confirm": "قبل المتابعة يرجى التأكد:",
+"continue":"استكمل",
   "about-us": "عن شركتنـــــــــا",
   "about-description": "شركتنا متخصصة في تقديم الضمان و الصيانه للاجهزة الالكترونية. تهدف الشركة الى توفير حماية اضافية للعملاء عند شراء اجهزة الكترونية والى تقديم المسئوليةالمالية عن الشركات.",
   "distinguish": "ما يميزنا",
@@ -31,7 +48,25 @@
   "login": "الدخول",
   "loginAsCorporation": "التسجيل ك شركة",
   "loginAsIndividual": "التسجيل ك فرد",
+<<<<<<< HEAD
   "waiting-review": "طلبك قيد المراجعة",
   "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت"
   
+=======
+  "personalProfile": "الملف الشخصي",
+  "warranty":"ضمان اونلاين بضغطة زر",
+  "multi-service":"خدمة ضمان متعددة",
+  "long-term":"ضمان طوبل الامد",
+  "guaranteed":"تعويض مضمون",
+  "response":"استجابة سريعة",
+  "identification-number":"الرقم التعريفى",
+  "company-mail":"ايميل الشركة",
+  "commercial-registration":"السجل التجاري",
+  "commission-percentage":"نسبة العمولة",
+  "register-warranty-contracts":"سجل عقود ضمان",
+  "create-warranty-contract":"انشاء عقد ضمان",
+  "waiting-review": "طلبك قيد المراجعة",
+  "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت",
+  "enterOTP":"ادخل رمز التأكيد"
+>>>>>>> 2bf5646d9abb4e897afa1c4a57b040dce612fb5a
 }

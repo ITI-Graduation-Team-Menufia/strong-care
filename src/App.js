@@ -1,33 +1,28 @@
 import "./App.css";
-import ConfirmationCode from "./components/shared/ConfirmationCode";
-import Review from "./components/shared/Review";
-// import About from "./components/About";
-// import ContactUSForm from "./components/ContactUSForm";
-// import BenefitsOverview from "./components/BenefitsOverview";
-// import Slider from "./components/Slider";
-// import Footer from "./components/shared/Footer";
-// import Navbar from "./components/shared/Navbar";
-// import Register from "./components/shared/Register";
-// import OurPartners from "./components/OurPartners";
+import FormOne from "./components/FormOne";
+import FormTwo from "./components/FormTwo";
+import { Route, Routes } from "react-router-dom";
+import { Footer, Navbar } from "./components/shared";
+import { CompanyProfile } from './components/company';
+import Review from './components/Review'
+import ConfirmationCode from './components/ConfirmationCode'
+import Home from "./pages/Home/Home";
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar></Navbar>
-      <Slider />
-      <BenefitsOverview></BenefitsOverview>
-      <Register />
-      <About></About>
-      <OurPartners></OurPartners>
-      <ContactUSForm></ContactUSForm>
+      <Navbar></Navbar>
+      <Home></Home>
       <Footer></Footer>
-      <Register/>
-      <BenefitsOverview></BenefitsOverview>
-      <OurPartners></OurPartners>
-      <Slider />  */}
-      {/* <Review /> */}
-      <ConfirmationCode />
+      <FormOne></FormOne>
+      <FormTwo></FormTwo>
+      <CompanyProfile></CompanyProfile>
+      <Review></Review>
+      <ConfirmationCode></ConfirmationCode>
+      <Routes>
+        <Route path="companyProfile" element={<CompanyProfile></CompanyProfile>}></Route>
+      </Routes>
     </div>
   );
 }

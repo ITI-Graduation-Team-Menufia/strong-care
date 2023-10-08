@@ -72,6 +72,12 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
+            {/* Temporary */}
+            <li className="nav-item">
+              <span className="nav-link" >
+                <Trans i18nKey="personalProfile"> </Trans>
+              </span>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,23 @@
 {
   "home": "Home",
-  "contact-us": "Contact Us", 
+  "contact-us": "Contact Us",
+  "info": "Your Information",
+  "confirm-code": "Confirmation Code ",
+  "company-name": "Company Name ",
+  "company-tel-num": "Company Phone",
+  "company-email": "Company Email",
+  "password": "Password",
+  "confirm-password": "Confirm Password",
+  "area": " Area",
+  "records-num": "Record Number",
+  "legal-name": "Company Legal Name   ",
+  "legal-office": "Company Legal Office  ",
+  "identity": "Company Identity",
+  "company-phone": " Company Phone Number",
+  "plz-enter": " Please Enter ",
+  "plz": " Please ",
+  "confirm": "Please before continue Check :", 
+  "continue":"Continue",
   "about-us": "About US", 
   "about-description": "Our company specializes in providing warranty and maintenance for electronic devices. The company aims to provide additional protection for customers when purchasing electronic devices and to provide financial responsibility for companies.", 
   "distinguish":"What distinguish US!", 
@@ -16,7 +33,6 @@
   "phone":"Phone Number ",
   "message":"Message ", 
   "send":"Send",
-  "contact-us": "Contact Us",
   "Our Partners": "Our Partners",
   "Compensation": "Compensation",
   "Guaranteed compensation": "Guaranteed compensation",
@@ -32,6 +48,25 @@
   "login": "Login",
   "loginAsCorporation": "Login As Corporation",
   "loginAsIndividual": "Login As Individual",
+<<<<<<< HEAD
   "waiting-review1":"Your request rsbeing reviewed",
   "waiting-review2": "We Will Review Your request and contact you soon"
+=======
+  "personalProfile": "Personal Profile",
+  "warranty":"Online Warranty with the Click of a Button",
+  "multi-service":"Multi-Service Warranty",
+  "long-term":"Long-Term Warranty",
+  "guaranteed":"Guaranteed Compensation",
+  "response":"Quick Response",
+  "identification-number":"Identification Number",
+  "company-mail":"Company Mail",
+  "commercial-registration":"Commercial Registration",
+  "commission-percentage":"Commission Percentage",
+  "register-warranty-contracts":"Register warranty contracts",
+  "create-warranty-contract":"Create warranty contact",
+  "waiting-review1":"Your request rsbeing reviewed",
+  "waiting-review2": "We Will Review Your request and contact you soon",
+  "enterOTP":"Enter Confirmation Code"
+
+>>>>>>> 2bf5646d9abb4e897afa1c4a57b040dce612fb5a
 }
