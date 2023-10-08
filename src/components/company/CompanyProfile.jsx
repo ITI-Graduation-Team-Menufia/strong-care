@@ -1,12 +1,10 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 import { Trans } from 'react-i18next'
-// import './company.css'
 const CompanyProfile = () => {
+  
   return (
-    <motion.div initial={{ opacity: 0,y:500}}
-    animate={{ opacity: 1, y:0}}
-    transition={{ delay: 0.3,type:'spring' }} className="container my-5">
+    <div className='container mt-3' >
+   
     <div className="row">
       <div className=" mb-1"><h2 className="fw-bold col-md-3 text-center"><Trans i18nKey="company-name"></Trans></h2></div>
   
@@ -63,7 +61,19 @@ const CompanyProfile = () => {
       <button className=" btn btn-primary fs-6 "><Trans i18nKey="create-warranty-contract"></Trans></button>
       <button className=" btn btn-primary fs-6"><Trans i18nKey="register-warranty-contracts"></Trans></button>
     </div>
-  </motion.div>
+    <div className="row mt-4 justify-content-center mt-5">
+    <h5 className='text-success text-center '><Trans i18nKey="reviewing"></Trans></h5>
+    <div className="col-auto">
+        <input className="form-control form-control-lg mt-3 " id="formFileLg" type="file" />
+    </div>
+    <div className="col-auto">
+        <button className="btn btn-primary fs-6 mt-3"><Trans i18nKey="confirming"></Trans></button>
+        
+    </div>
+</div>
+
+
+  </div>
   
   
 
