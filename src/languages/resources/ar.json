@@ -59,5 +59,8 @@
   "commercial-registration":"السجل التجاري",
   "commission-percentage":"نسبة العمولة",
   "register-warranty-contracts":"سجل عقود ضمان",
-  "create-warranty-contract":"انشاء عقد ضمان"
+  "create-warranty-contract":"انشاء عقد ضمان",
+  "waiting-review": "طلبك قيد المراجعة",
+  "waiting-review2": "طلبك قيد المراجعة وسيتم الرد عليك في اقرب وقت",
+  "enterOTP":"ادخل رمز التأكيد"
 }
