@@ -48,5 +48,16 @@
   "login": "الدخول",
   "loginAsCorporation": "التسجيل ك شركة",
   "loginAsIndividual": "التسجيل ك فرد",
-  "personalProfile": "الملف الشخصي"
+  "personalProfile": "الملف الشخصي",
+  "warranty":"ضمان اونلاين بضغطة زر",
+  "multi-service":"خدمة ضمان متعددة",
+  "long-term":"ضمان طوبل الامد",
+  "guaranteed":"تعويض مضمون",
+  "response":"استجابة سريعة",
+  "identification-number":"الرقم التعريفى",
+  "company-mail":"ايميل الشركة",
+  "commercial-registration":"السجل التجاري",
+  "commission-percentage":"نسبة العمولة",
+  "register-warranty-contracts":"سجل عقود ضمان",
+  "create-warranty-contract":"انشاء عقد ضمان"
 }

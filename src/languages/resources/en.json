@@ -48,5 +48,22 @@
   "login": "Login",
   "loginAsCorporation": "Login As Corporation",
   "loginAsIndividual": "Login As Individual",
-  "personalProfile": "Personal Profile"
+  "personalProfile": "Personal Profile",
+  "warranty":"Online Warranty with the Click of a Button",
+  "multi-service":"Multi-Service Warranty",
+  "long-term":"Long-Term Warranty",
+  "guaranteed":"Guaranteed Compensation",
+  "response":"Quick Response",
+  "identification-number":"Identification Number",
+  "company-mail":"Company Mail",
+  "commercial-registration":"Commercial Registration",
+  "commission-percentage":"Commission Percentage",
+  "register-warranty-contracts":"Register warranty contracts",
+  "create-warranty-contract":"Create warranty contact"
+
+
+
+
+
+
 }
