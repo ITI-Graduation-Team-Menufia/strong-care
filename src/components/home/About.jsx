@@ -7,7 +7,9 @@ import {
   faHeadset,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-import "./about.css";
+import "./About.css";
+
+
 export default function About() {
   return (
     <div

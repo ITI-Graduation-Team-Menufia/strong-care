@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { withTranslation } from "react-i18next";
-import sliderImg1 from '../assets/images/slider/1.jpg';
-import sliderImg2 from '../assets/images/slider/2.jpg';
-import sliderImg3 from '../assets/images/slider/3.jpg';
-import sliderImg4 from '../assets/images/slider/4.jpg';
-import sliderImg5 from '../assets/images/slider/5.jpg';
+import sliderImg1 from '../../assets/images/slider/1.jpg';
+import sliderImg2 from '../../assets/images/slider/2.jpg';
+import sliderImg3 from '../../assets/images/slider/3.jpg';
+import sliderImg4 from '../../assets/images/slider/4.jpg';
+import sliderImg5 from '../../assets/images/slider/5.jpg';
 
 
 const Slider = ({ t }) => {
