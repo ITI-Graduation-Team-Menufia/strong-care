@@ -59,11 +59,9 @@
   "commercial-registration":"Commercial Registration",
   "commission-percentage":"Commission Percentage",
   "register-warranty-contracts":"Register warranty contracts",
-  "create-warranty-contract":"Create warranty contact"
-
-
-
-
-
+  "create-warranty-contract":"Create warranty contact",
+  "waiting-review1":"Your request rsbeing reviewed",
+  "waiting-review2": "We Will Review Your request and contact you soon",
+  "enterOTP":"Enter Confirmation Code"
 
 }

@@ -6,12 +6,12 @@ import Slider from "./components/Slider";
 import OurPartners from "./components/OurPartners";
 import FormOne from "./components/FormOne";
 import FormTwo from "./components/FormTwo";
-import Register from "./components/shared/Register";
+import Register from "./components/Register";
 import { Route, Routes } from "react-router-dom";
 import { Footer, Navbar } from "./components/shared";
 import { CompanyProfile } from './components/company';
-import Review from './components/shared/Review'
-import ConfirmationCode from './components/shared/ConfirmationCode'
+import Review from './components/Review'
+import ConfirmationCode from './components/ConfirmationCode'
 
 
 function App() {
