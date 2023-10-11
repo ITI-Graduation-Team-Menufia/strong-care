@@ -49,7 +49,7 @@ export default function Company() {
     if (id !== 'add') {
       fetchData();
     }
-  }, []);
+  }, [id]);
 
   // Sanitizing company data from user._id & populating company data
   delete company?.user?._id;

@@ -42,7 +42,7 @@ export default function User() {
     if(id !== 'add'){
       fetchData();
     }
-  }, []);
+  }, [id]);
 
   // For Image attachment hidden button
   const fileInputRef = useRef(null);
