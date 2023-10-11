@@ -18,7 +18,7 @@ import "./Home.scss";
 export default function Home() {
   return (
     <div className="home">
-      <div className="box box1">
+      {/* <div className="box box1">
         <TopBox />
       </div>
       <div className="box box2">
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       <div className="box box9">
         <BarChartBox {...barChartBoxRevenue} />
-      </div>
-    </div>
+      </div> */}
+      <h1>Home</h1>    </div>
   )
 }
