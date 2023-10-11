@@ -11,7 +11,6 @@ import User from "./users/User";
 
 export default function AdminDashboard() {
 
-
     return (
         <div className="main">
             <Navbar></Navbar>
