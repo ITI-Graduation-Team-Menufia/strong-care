@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer, Navbar } from '../components/shared';
 import { Route, Routes } from 'react-router-dom'
-import { Home } from './home/Home';
+import { Home } from '../pages/home/Home';
 
 export default function Main() {
   return (
