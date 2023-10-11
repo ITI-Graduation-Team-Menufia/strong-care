@@ -1,16 +1,16 @@
 import React from 'react'
 import { Footer, Navbar } from '../components/shared'
-import Home from './home/Home';
-import { Route, Routes } from 'react-router-dom'
+// import Home from './home/Home';
+// import { Route, Routes } from 'react-router-dom'
 
 export default function Main() {
   return (
     <>
     <Navbar></Navbar>
-        <Routes>
+        {/* <Routes>
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='*' element={<Home></Home>}></Route>
-        </Routes>
+        </Routes> */}
     <Footer></Footer>
     </>
   )

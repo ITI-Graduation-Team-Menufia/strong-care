@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo.png'
+// import logo from '../assets/images/logo.png'
 // STATIC DATA FOR TABLE:
 // DATA THAT SHOULD COME FROM DB
 const usersRows = [
