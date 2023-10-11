@@ -1,3 +1,13 @@
+:root {
+  --primary-bg: #416cb4;
+  --secondary-bg: #f36f5f;
+  --primary-light-bg: #57a7dc;
+  --secondary-light-bg: #f37360;
+  --gray-text: #6c6a6a;
+  --white-text: #fff;
+  --primary-text: #416cb4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +17,6 @@
 a {
   text-decoration: none;
   color: inherit;
-}
-
-:root {
-  --primary-bg: #416cb4;
-  --secondary-bg: #f36f5f;
-  --primary-light-bg: #57a7dc;
-  --secondar-light-bg: #f37360;
-  --gray-text: #6c6a6a;
-  --white-text: #fff;
-  --primary-text: #416cb4;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
@@ -42,6 +42,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .partners-container {
   position: relative;
   text-align: center;
