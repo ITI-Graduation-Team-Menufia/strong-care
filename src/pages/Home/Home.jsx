@@ -1,7 +1,7 @@
 import React from 'react';
 import {About,BenefitsOverview, ContactUSForm, OurPartners, Register, Slider} from '../../components/home/index'
 
-export default function Home() {
+export function Home() {
     return (
         <div>
             <Slider />
