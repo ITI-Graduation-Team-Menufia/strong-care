@@ -87,7 +87,7 @@ export default function User() {
       data.append('role', userToBeSent.role);
       data.append('phone', userToBeSent.phone);
       data.append('email', userToBeSent.email);
-      data.append('password', '123456'); //Static Password for each new user
+      data.append('password', '12345678'); //Static Password for each new user
     }
 
     // Send to BackEnd

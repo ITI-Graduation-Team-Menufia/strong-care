@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import AdminDashboard from "./pages/dashboard/AdminDashboard";
-import { Main } from "./pages/Home/Main";
+import { Main } from "./pages/home/Main";
 
 function App() {
   return (
