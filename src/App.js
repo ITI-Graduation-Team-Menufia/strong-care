@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import AdminDashboard from "./pages/dashboard/AdminDashboard";
 import { Main } from "./pages/Main";
 
-
 function App() {
   return (
     <div className="App">
