@@ -10,7 +10,7 @@ import { getAllUsers } from "../../../APIs/users"; //To be passed to the useFetc
 const columns = [
     // { field: 'id', type: 'string', headerName: 'ID', width: 100, sortable: false },
     {
-        field: 'profileImg', headerName: 'Img', width: 100, sortable: false,
+        field: 'profileImg', headerName: 'Profile Img', width: 100, sortable: false,
         renderCell: (params) => {
             return <img src={params.row.profileImg.url
                 || noAvatarImg} alt="" />

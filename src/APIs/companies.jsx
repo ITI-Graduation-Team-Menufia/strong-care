@@ -5,7 +5,7 @@ let url = `${baseURL}users/company/`;
 
 let getAllCompanies = () => axios.get(url);
 let getCompanyById = (companyId) => axios.get(`${url}${companyId}`);
-let addNewCompany = (company) => axios.post({ url }, company);
+let addNewCompany = (company) => axios.post(`${ url }`, company);
 let editCompany = (companyId, company) =>
     axios.put(`${url}/${companyId}`, company, {
         headers: {

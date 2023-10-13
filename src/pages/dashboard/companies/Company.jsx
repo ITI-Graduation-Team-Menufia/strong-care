@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { addNewCompany, editCompany, getCompanyById } from '../../../APIs/companies';
 import './Company.scss';
-import defaultProfilePic from '../../../assets/images/dashboard/profile-pic.jpg';
+import DEFAULT_PROFILE_IMAGE from '../../../assets/images/dashboard/profile-pic.jpg';
 import React, { useState, useRef, useEffect } from 'react';
+import { addNewUser } from '../../../APIs/users';
 
 
 // DUMMY DATA
@@ -45,7 +46,7 @@ export default function Company() {
         setIsLoading(false);
       }
     };
-    
+
     if (id !== 'add') {
       fetchData();
     }
@@ -53,7 +54,7 @@ export default function Company() {
 
   // Sanitizing company data from user._id & populating company data
   delete company?.user?._id;
-  company = {...company, ...company?.user};
+  company = { ...company, ...company?.user };
   delete company?.user;
 
   // For Image attachment hidden button
@@ -71,57 +72,59 @@ export default function Company() {
   };
 
 
+  // For uploading images
+  const [selectedProfileImage, setSelectedProfileImage] = useState(null);
+  const [selectedCommercialRegisterImage, setSelectedCommercialRegisterImage] = useState(null);
+  const [selectedIdentityImage, setSelectedIdentityImage] = useState(null);
 
-  // For uploading image
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  function handleFileChange(event) {
+  function handleFileChange(event, setterFunction) {
     const file = event.target.files[0];
-    setSelectedImage(file);
+    setterFunction(file);
   }
 
 
 
   const handleSave = async () => {
-    let companyToBeSent = {
-      firstName: company.firstName,
-      lastName: company.lastName,
-      password: 'userpassword',
-      profileImg: selectedImage,
-      role: company.role,
-      phone: company.phone,
-      email: company.email
-    }
 
-    const data = new FormData();
-    data.append('firstName', companyToBeSent.firstName);
-    data.append('lastName', companyToBeSent.lastName);
-    data.append('password', companyToBeSent.password);
-    data.append('profileImg', companyToBeSent.profileImg);
+    const userData = new FormData();
+    userData.append('firstName', company.firstName);
+    userData.append('lastName', company.lastName);
+    userData.append('password', 'defaultPassword');
+    userData.append('profileImg', selectedProfileImage);
 
     if (id === 'add') {
-      data.append('role', companyToBeSent.role);
-      data.append('phone', companyToBeSent.phone);
-      data.append('email', companyToBeSent.email);
+      userData.append('role', 'company');
+      userData.append('phone', company.phone);
+      userData.append('email', company.email);
     }
 
-    console.log(data);
+    console.log(userData);
+
+    const companyData = new FormData();
+    companyData.append('country', company.country);
+    companyData.append('noCommercialRegister', company.noCommercialRegister);
+    companyData.append('commission', company.commission);
+    companyData.append('legalName', company.legalName);
+    companyData.append('commercialRegisterImg', selectedCommercialRegisterImage);
+    companyData.append('identityImg', selectedIdentityImage);
 
     // Send to BackEnd
     try {
       if (id === 'add') {
-        console.log(data);
-        await addNewCompany(data, companyToBeSent.role);
+        let {_id} = (await addNewUser(userData, 'company')).data.data;
+        console.log(_id);
+        companyData.append('user', _id);
+        await addNewCompany(companyData);
+        console.log('Company added Successfully');
       }
       else {
-        await editCompany(id, data);
+        await editCompany(id, userData);
       }
     } catch (error) {
       console.log(error);
     }
 
     console.log('Company data to be saved:');
-    console.log(companyToBeSent);
   };
 
 
@@ -132,7 +135,7 @@ export default function Company() {
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
             <img
-              src={company?.profileImg?.url || defaultProfilePic}
+              src={company?.profileImg?.url || DEFAULT_PROFILE_IMAGE}
               alt="img"
               className="image rounded-circle"
             />
@@ -145,7 +148,7 @@ export default function Company() {
                 style={{ display: 'none' }}
                 ref={fileInputRef}
                 accept="image/*"
-                onChange={handleFileChange}
+                onChange={(event)=>handleFileChange(event, setSelectedProfileImage)}
               />
             </div>
           </div>
@@ -160,6 +163,16 @@ export default function Company() {
               className="form-control"
               name="id"
               value={company.id}
+              onChange={handleInputChange}
+            />
+          </div> */}
+          {/* <div className="form-group">
+            <label>User ID:</label>
+            <input
+              type="text"
+              className="form-control"
+              name="userId"
+              value={company?.userId}
               onChange={handleInputChange}
             />
           </div> */}
@@ -185,7 +198,7 @@ export default function Company() {
           </div>
           <div className="form-group">
             <label>Verified:</label>
-            <select
+            <select disabled
               className="form-control"
               name="verified"
               value={company?.verified}
@@ -197,7 +210,7 @@ export default function Company() {
           </div>
           <div className="form-group">
             <label>Verified Email:</label>
-            <select
+            <select disabled
               className="form-control"
               name="verifiedEmail"
               value={company?.verifiedEmail}
@@ -209,7 +222,7 @@ export default function Company() {
           </div>
           <div className="form-group">
             <label>Verified Phone:</label>
-            <select
+            <select disabled
               className="form-control"
               name="verifiedPhone"
               value={company?.verifiedPhone}
@@ -261,7 +274,7 @@ export default function Company() {
               onChange={handleInputChange}
             />
           </div> */}
-          <div className="form-group">
+          {/* <div className="form-group">
             <label>Role:</label>
             <input
               type="text"
@@ -270,7 +283,7 @@ export default function Company() {
               value={company?.role}
               onChange={handleInputChange}
             />
-          </div>
+          </div> */}
           <div className="form-group">
             <label>Country:</label>
             <input
@@ -313,17 +326,18 @@ export default function Company() {
             <p className='text-danger'>To be changed to a map </p>
           </div>
           {/* Commercial register image */}
-          {/* <div className="form-group">
+          <div className="form-group">
             <label>Commercial Register Img:</label>
             <input
-              type="text"
-              className="form-control"
-              name="commercialRegisterImg"
-              value={company?.commercialRegisterImg}
-              onChange={handleInputChange}
-            />
-          </div> */}
-          <div className="form-group">
+                type="file"
+                id="file-input"
+                name="commercialRegisterImg"
+                accept="image/*"
+                onChange={(event)=>handleFileChange(event, setSelectedCommercialRegisterImage)}
+              />
+          </div>
+          {/* //////////// */}
+          {/* <div className="form-group">
             <label>State:</label>
             <input
               type="text"
@@ -332,10 +346,11 @@ export default function Company() {
               value={company?.state}
               onChange={handleInputChange}
             />
-          </div>
+          </div> */}
           <div className="form-group">
             <label>Identification Number:</label>
             <input
+            disabled
               type="text"
               className="form-control"
               name="identificationNo"
@@ -344,16 +359,16 @@ export default function Company() {
             />
           </div>
           {/* Identity Img */}
-          {/* <div className="form-group">
+          <div className="form-group">
             <label>Identity Img:</label>
             <input
-              type="text"
-              className="form-control"
-              name="identityImg"
-              value={company?.identityImg}
-              onChange={handleInputChange}
-            />
-          </div> */}
+                type="file"
+                id="file-input"
+                name="identityImg"
+                accept="image/*"
+                onChange={(event)=>handleFileChange(event, setSelectedIdentityImage)}
+              />
+          </div>
           <button className="btn btn-success w-50 mt-2 align-self-center" onClick={handleSave}>
             Save
           </button>

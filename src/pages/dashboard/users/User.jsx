@@ -66,25 +66,15 @@ export default function User() {
   }
 
   const handleSave = async () => {
-    let userToBeSent = {
-      firstName: user.firstName,
-      lastName: user.lastName,
-      password: 'userpassword',
-      profileImg: selectedImage,
-      role: user.role,
-      phone: user.phone,
-      email: user.email
-    }
-
     const data = new FormData();
-    data.append('firstName', userToBeSent.firstName);
-    data.append('lastName', userToBeSent.lastName);
-    data.append('profileImg', userToBeSent.profileImg);
-    
+    data.append('firstName', user.firstName);
+    data.append('lastName', user.lastName);
+    data.append('profileImg', selectedImage);
+
     if(id === 'add'){
-      data.append('role', userToBeSent.role || 'admin');
-      data.append('phone', userToBeSent.phone);
-      data.append('email', userToBeSent.email);
+      data.append('role', user.role || 'admin');
+      data.append('phone', user.phone);
+      data.append('email', user.email);
       data.append('password', '12345678'); //Static Password for each new user
     }
 
@@ -92,7 +82,7 @@ export default function User() {
     try {
       if(id === 'add'){
         console.log('ADD', data);
-        await addNewUser(data, userToBeSent.role);
+        await addNewUser(data, user.role);
       }
       else{
         console.log('Edit', data);

@@ -77,9 +77,9 @@ export default function DataTable(props) {
                 pageSizeOptions={[8]}
                 // checkboxSelection
                 disableRowSelectionOnClick
-                disableColumnFilter
-                disableDensitySelector
-                disableColumnSelector
+                // disableColumnFilter
+                // disableDensitySelector
+                // disableColumnSelector
                 // disableColumnMenu
             />
         </div>
