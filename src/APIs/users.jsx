@@ -7,11 +7,11 @@ let getAllUsers = () => axios.get(url);
 let getUserById = (userId) => axios.get(`${url}${userId}`);
 let addNewUser = (user, role) => {
   if(role === 'admin'){
-    console.log('Sending an admin..');
-  return axios.post(`${url}/addAdmin`, user);
+    console.log('Adding an admin..');
+  return axios.post(`${url}addAdmin`, user);
   }else{
-    console.log('Sending a user..');
-    return axios.post({url}, user);
+    console.log('Adding a user..');
+    return axios.post(`${url}`, user);
   }
 }
 let editUser = (userId, user) =>

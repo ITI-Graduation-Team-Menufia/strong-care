@@ -1,7 +1,7 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import { t } from "i18next";
-export default function FormOne() {
+export default function Warranty() {
   return (
     <div
       className="container-fluid shadow p-3 mt-3 col-12 col-xxl-7 col-xl-7 col-lg-8 col-md-8 col-sm-10"

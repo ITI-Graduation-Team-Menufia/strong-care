@@ -73,11 +73,11 @@ export default function Navbar() {
               </ul>
             </li>
             {/* Temporary */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <span className="nav-link" >
                 <Trans i18nKey="personalProfile"> </Trans>
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

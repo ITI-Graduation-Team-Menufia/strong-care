@@ -1,7 +1,7 @@
 import React from 'react'
 import { Trans } from 'react-i18next'
 
-const ConfirmPassword = () => {
+export const ConfirmPassword = () => {
   return (
     <div className="container">
     <div className="row d-flex justify-content-center my-5">
@@ -47,5 +47,3 @@ const ConfirmPassword = () => {
   </div>
   )
 }
-
-export default ConfirmPassword

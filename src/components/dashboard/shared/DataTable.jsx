@@ -80,7 +80,7 @@ export default function DataTable(props) {
                 disableColumnFilter
                 disableDensitySelector
                 disableColumnSelector
-                disableColumnMenu
+                // disableColumnMenu
             />
         </div>
     )

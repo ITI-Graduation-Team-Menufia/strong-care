@@ -1,7 +1,7 @@
 import React from 'react'
 import { Trans } from 'react-i18next'
 
-const ForggitenPassword = () => {
+export const ForgotPassword = () => {
   return (
     <div className="container">
     <div className="row d-flex justify-content-center my-5">
@@ -37,5 +37,3 @@ const ForggitenPassword = () => {
   </div>
   )
 }
-
-export default ForggitenPassword
