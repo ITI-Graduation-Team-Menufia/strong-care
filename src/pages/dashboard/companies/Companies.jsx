@@ -8,26 +8,34 @@ import { getAllCompanies } from "../../../APIs/companies"; //To be passed to the
 
 // COLUMNS FOR DATA TABLE
 const columns = [
-    { field: 'id', type: 'string', headerName: 'ID', width: 250, sortable: false },
+    // { field: 'id', type: 'string', headerName: 'ID', width: 250, sortable: false },
     {
-        field: 'profileImg', headerName: 'img', width: 100, sortable: false,
+        field: 'profileImg', headerName: 'Profile Img', width: 100, sortable: false,
         renderCell: (params) => {
             return <img src={params.row.profileImg.url || noAvatarImg} alt="" />
         }
     },
-    {
-        field: 'firstName',
-        type: 'string',
-        headerName: 'First name',
-        width: 100,
-        sortable: false
-        //   editable: true,
-    },
+    // {
+    //     field: 'firstName',
+    //     type: 'string',
+    //     headerName: 'First name',
+    //     width: 100,
+    //     sortable: false
+    //     //   editable: true,
+    // },
+    // {
+    //     field: 'lastName',
+    //     type: 'string',
+    //     headerName: 'Last name',
+    //     width: 100,
+    //     sortable: false
+    //     //   editable: true,
+    // },
     {
         field: 'legalName',
         type: 'string',
         headerName: 'Legal Name',
-        width: 100,
+        width: 150,
         sortable: false
         //   editable: true,
     },
@@ -42,7 +50,7 @@ const columns = [
         field: 'phone',
         type: 'string',
         headerName: 'Phone',
-        width: 100,
+        width: 150,
         sortable: false
     },
     {
