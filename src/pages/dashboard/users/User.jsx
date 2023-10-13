@@ -70,7 +70,9 @@ export default function User() {
     data.append('firstName', user.firstName);
     data.append('lastName', user.lastName);
     data.append('profileImg', selectedImage);
-    data.append('location', {longitude:123, latitude:123}) //
+    // data.append('latitude', '123.456');
+    // data.append('longitude', '123.456');
+
 
     if(id === 'add'){
       data.append('role', user.role || 'admin');

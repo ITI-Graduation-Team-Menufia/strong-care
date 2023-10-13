@@ -92,7 +92,8 @@ export default function Company() {
     userData.append('lastName', company.lastName);
     userData.append('password', 'defaultPassword');
     userData.append('profileImg', selectedProfileImage);
-    userData.append('location', {longitude:123, latitude:123}); // For location, will come from maps api
+    userData.append('latitude', '123.456'); // For location, will come from maps api
+    userData.append('longitude', '123.456'); 
 
     if (id === 'add') {
       userData.append('role', 'company');
