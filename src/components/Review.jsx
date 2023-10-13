@@ -2,7 +2,7 @@ import React from 'react'
 import check from "../assets/images/check.png";
 import { Trans } from "react-i18next";
 
-export default function Review() {
+export function Review() {
   return (
     <div dir="rtl" class="container d-flex justify-content-center align-items-center flex-column " style={{display: "flex", height: "100vh"}}>
       <h2 class="mb-5"><Trans i18nKey="waiting-review1" values="ar">طلبك قيد المراجعة</Trans></h2>

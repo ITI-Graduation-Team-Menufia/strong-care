@@ -46,6 +46,8 @@ export default function User() {
 
   // For Image attachment hidden button
   const fileInputRef = useRef(null);
+
+  // Triggers the input type file when the icon is clicked
   const handleEditClick = () => {
     fileInputRef.current.click();
   };
@@ -58,7 +60,6 @@ export default function User() {
 
   // For uploading image
   const [selectedImage, setSelectedImage] = useState(null);
-
   function handleFileChange(event) {
     const file = event.target.files[0];
     setSelectedImage(file);
@@ -68,19 +69,16 @@ export default function User() {
     let userToBeSent = {
       firstName: user.firstName,
       lastName: user.lastName,
-      // password: 'userpassword',
+      password: 'userpassword',
       profileImg: selectedImage,
       role: user.role,
       phone: user.phone,
       email: user.email
     }
 
-    console.log(userToBeSent);
-
     const data = new FormData();
     data.append('firstName', userToBeSent.firstName);
     data.append('lastName', userToBeSent.lastName);
-    data.append('password', userToBeSent.password);
     data.append('profileImg', userToBeSent.profileImg);
 
     console.log(data);
@@ -89,6 +87,7 @@ export default function User() {
       data.append('role', userToBeSent.role);
       data.append('phone', userToBeSent.phone);
       data.append('email', userToBeSent.email);
+      data.append('password', '123456'); //Static Password for each new user
     }
 
     // Send to BackEnd

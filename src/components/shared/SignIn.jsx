@@ -1,9 +1,10 @@
 import React from 'react'
 import { Trans } from 'react-i18next'
 
-const SignIn = () => {
+export const SignIn = () => {
     return (
-        <div className="container">
+        <div className='my-5 p-5'>
+        <div className="container-fluid">
             <div className="row d-flex justify-content-center my-5">
                 <form className="col-md-5 col-sm-7 col-9 d-flex flex-column">
                     <div className="form-outline mb-4">
@@ -67,8 +68,7 @@ const SignIn = () => {
                 </form>
             </div>
         </div>
+        </div>
 
     )
 }
-
-export default SignIn

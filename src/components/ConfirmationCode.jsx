@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from "react-i18next";
-export default function ConfirmationCode() {
+export function ConfirmationCode() {
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       <div className=" d-flex flex-column justify-content-center align-items-center center-item pt-5" style={{ width: "25rem", height: "30rem", margin: "auto" }}>

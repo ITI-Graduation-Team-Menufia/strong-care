@@ -4,7 +4,7 @@ import { Trans } from "react-i18next";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function FormTwo() {
+export function FormTwo() {
   return (
     <div>
       <div
