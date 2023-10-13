@@ -86,11 +86,13 @@ export default function Company() {
 
   const handleSave = async () => {
 
+
     const userData = new FormData();
     userData.append('firstName', company.firstName);
     userData.append('lastName', company.lastName);
     userData.append('password', 'defaultPassword');
     userData.append('profileImg', selectedProfileImage);
+    userData.append('location', {longitude:123, latitude:123}); // For location, will come from maps api
 
     if (id === 'add') {
       userData.append('role', 'company');
