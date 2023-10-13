@@ -80,11 +80,9 @@ export default function User() {
     data.append('firstName', userToBeSent.firstName);
     data.append('lastName', userToBeSent.lastName);
     data.append('profileImg', userToBeSent.profileImg);
-
-    console.log(data);
-
+    
     if(id === 'add'){
-      data.append('role', userToBeSent.role);
+      data.append('role', userToBeSent.role || 'admin');
       data.append('phone', userToBeSent.phone);
       data.append('email', userToBeSent.email);
       data.append('password', '12345678'); //Static Password for each new user
@@ -177,7 +175,7 @@ export default function User() {
             >
               <option value='' disabled required selected>Choose a role</option>
               {/* <option value={'individual'}>Individual</option> */}
-              <option value={'admin'}>Admin</option>
+              <option value={'admin'} selected>Admin</option>
               <option value={'compensationDepart'}>Compensation Dept.</option>
               <option value={'requestsDepart'}>Requests Dept.</option>
             </select>
