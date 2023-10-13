@@ -1,7 +1,7 @@
 import React from "react";
 import { Footer, Navbar } from "../components/shared";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./home/Home";
+import { Home } from './home/Home';
 import { SignIn } from "../components/shared/SignIn";
 import { Register } from "../components/home";
 import { FormOne } from "../components/FormOne";
