@@ -70,6 +70,7 @@ export default function User() {
     data.append('firstName', user.firstName);
     data.append('lastName', user.lastName);
     data.append('profileImg', selectedImage);
+    data.append('location', {longitude:123, latitude:123}) //
 
     if(id === 'add'){
       data.append('role', user.role || 'admin');
@@ -226,7 +227,7 @@ export default function User() {
               onChange={handleInputChange}
             />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label>Location:</label>
             <input
               type="text"
@@ -236,7 +237,7 @@ export default function User() {
               onChange={handleInputChange}
             />
             <p className='text-danger'>To be changed to a map </p>
-          </div>
+          </div> */}
           {/* SHOWING USER PROFIEL IMG URL */}
           {/* <div className="form-group">
             <label>Profile Image:</label>
