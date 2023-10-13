@@ -1,18 +1,18 @@
 import React from "react";
-import { Footer, Navbar } from "../../components/shared";
+import { Footer, Navbar } from "../components/shared";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./Home";
-import { SignIn } from "../../components/shared/SignIn";
-import { Register } from "../../components/home";
-import { FormOne } from "../../components/FormOne";
-import { FormTwo } from "../../components/FormTwo";
-import { Review } from "../../components/Review";
-import { ConfirmPassword } from "../../components/shared/ConfirmPassword";
-import { ForgotPassword } from "../../components/shared/ForgotPassword";
-import { WarrantyContract } from "../../components/shared/WarrantyContract";
-import { ConfirmationCode } from "../../components/ConfirmationCode";
-import Warranty from "../../components/Warranty";
-import { Compensation } from "../../components/Compensation";
+import { Home } from "./home/Home";
+import { SignIn } from "../components/shared/SignIn";
+import { Register } from "../components/home";
+import { FormOne } from "../components/FormOne";
+import { FormTwo } from "../components/FormTwo";
+import { Review } from "../components/Review";
+import { ConfirmPassword } from "../components/shared/ConfirmPassword";
+import { ForgotPassword } from "../components/shared/ForgotPassword";
+import { WarrantyContract } from "../components/shared/WarrantyContract";
+import { ConfirmationCode } from "../components/ConfirmationCode";
+import Warranty from "../components/Warranty";
+import { Compensation } from "../components/Compensation";
 // import { About, BenefitsOverview, ContactUSForm, OurPartners, Register, Slider } from '../../components/home/index'
 
 export function Main() {
