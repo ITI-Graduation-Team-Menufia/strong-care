@@ -1,7 +1,7 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import { t } from "i18next";
-export default function FormOne() {
+export function FormOne() {
   return (
     <div
       className="container-fluid shadow p-3 mt-3 col-12 col-xxl-7 col-xl-7 col-lg-8 col-md-8 col-sm-10"
@@ -19,8 +19,8 @@ export default function FormOne() {
             required
             placeholder={t("company-name")}
           />
-          <div class="invalid-feedback text-danger">
-            <Trans i18nKey="plz-enter"></Trans>
+          <div className="invalid-feedback text-danger">
+            <Trans i18nKey="please-enter"></Trans>
             <Trans i18nKey="company-name"></Trans>
           </div>
         </div>
@@ -32,8 +32,8 @@ export default function FormOne() {
             required
             placeholder={t("company-tel-num")}
           />
-          {/* <div class="invalid-feedback">
-            <Trans i18nKey="plz-enter"></Trans>
+          {/* <div className="invalid-feedback">
+            <Trans i18nKey="please-enter"></Trans>
             <Trans i18nKey="company-tel-num"></Trans>
           </div> */}
         </div>
@@ -45,8 +45,8 @@ export default function FormOne() {
             required
             placeholder={t("company-email")}
           />
-          {/* <div class="invalid-feedback">
-            <Trans i18nKey="plz-enter"></Trans>
+          {/* <div className="invalid-feedback">
+            <Trans i18nKey="please-enter"></Trans>
             <Trans i18nKey="company-email"></Trans>
           </div> */}
         </div>
@@ -58,8 +58,8 @@ export default function FormOne() {
             required
             placeholder={t("password")}
           />
-          {/* <div class="invalid-feedback">
-            <Trans i18nKey="plz-enter"></Trans>
+          {/* <div className="invalid-feedback">
+            <Trans i18nKey="please-enter"></Trans>
             <Trans i18nKey="password"></Trans>
           </div> */}
         </div>
@@ -71,8 +71,8 @@ export default function FormOne() {
             required
             placeholder={t("confirm-password")}
           />
-          {/* <div class="invalid-feedback">
-            <Trans i18nKey="plz"></Trans>
+          {/* <div className="invalid-feedback">
+            <Trans i18nKey="please"></Trans>
             <Trans i18nKey="confirm-password"></Trans>
           </div> */}
         </div>
