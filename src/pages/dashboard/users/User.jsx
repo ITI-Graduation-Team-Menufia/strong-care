@@ -100,9 +100,9 @@ export default function User() {
   };
 
   return (
-    <div className='user m-sm-0 p-sm-0'>
-      <h2>{id === 'add' ? 'Create New User' : 'User Details'}</h2>
-      {!isLoading && <div className="container d-flex flex-column flex-sm-row mt-3 gap-2">
+    <div className='user w-100 mt-2 px-3'>
+      <h2 className='text-center'>{id === 'add' ? 'Create New User' : 'User Details'}</h2>
+      {!isLoading && <div className="d-flex flex-column flex-sm-row mt-5 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
             <img
@@ -126,7 +126,7 @@ export default function User() {
 
           <h2>{`${user?.firstName || 'New'} ${user?.lastName || 'User'}`}</h2>
         </div>
-        <div className='col-12 col-sm-5 d-flex flex-column gap-1'>
+        <div className='col-12 col-sm-5 d-flex flex-column gap-2'>
           {/* SHOWING USER ID */}
           {/* <div className="form-group">
             <label>ID:</label>

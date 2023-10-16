@@ -83,12 +83,11 @@ export default function Company() {
   }
 
 
-
-  const handleSave = async () => {
+    const handleSave = async () => {
 
 
     const userData = new FormData();
-    userData.append('firstName', company.firstName);
+    userData.append('firstName', 'شركة');
     userData.append('lastName', company.lastName);
     userData.append('password', 'defaultPassword');
     userData.append('profileImg', selectedProfileImage);
@@ -115,7 +114,7 @@ export default function Company() {
     try {
       if (id === 'add') {
         let {_id} = (await addNewUser(userData, 'company')).data.data;
-        console.log(_id);
+        // console.log(_id);
         companyData.append('user', _id);
         await addNewCompany(companyData);
         console.log('Company added Successfully');
@@ -132,9 +131,9 @@ export default function Company() {
 
 
   return (
-    <div className='company'>
-      <h2>{id === 'add' ? 'Create New Company' : 'Company Details'}</h2>
-      {!isLoading && <div className="container d-flex flex-column flex-sm-row mt-3 gap-2">
+    <div className='company w-100 mt-2 px-3'>
+      <h2 className='text-center'>{id === 'add' ? 'Create New Company' : 'Company Details'}</h2>
+      {!isLoading && <div className="d-flex flex-column flex-sm-row mt-5 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
             <img
@@ -157,7 +156,7 @@ export default function Company() {
           </div>
           <h2>{`${company?.firstName || 'New'} ${company?.lastName || 'Company'}`}</h2>
         </div>
-        <div className='col-12 col-sm-5 d-flex flex-column gap-1'>
+        <div className='col-12 col-sm-5 d-flex flex-column gap-2'>
           {/* SHOWING COMPANY ID */}
           {/* <div className="form-group">
             <label>ID:</label>
@@ -337,6 +336,7 @@ export default function Company() {
                 name="commercialRegisterImg"
                 accept="image/*"
                 onChange={(event)=>handleFileChange(event, setSelectedCommercialRegisterImage)}
+                className='w-100'
               />
           </div>
           {/* //////////// */}
@@ -370,6 +370,7 @@ export default function Company() {
                 name="identityImg"
                 accept="image/*"
                 onChange={(event)=>handleFileChange(event, setSelectedIdentityImage)}
+                className='w-100'
               />
           </div>
           <button className="btn btn-success w-50 mt-2 align-self-center" onClick={handleSave}>
