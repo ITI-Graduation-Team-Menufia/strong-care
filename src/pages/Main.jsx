@@ -14,6 +14,7 @@ import { ConfirmationCode } from "../components/ConfirmationCode";
 import Warranty from "../components/Warranty";
 import { Compensation } from "../components/Compensation";
 import AboutUs from "../components/AboutUs";
+import NotFound from "../components/shared/NotFound";
 // import { About, BenefitsOverview, ContactUSForm, OurPartners, Register, Slider } from '../../components/home/index'
 
 export function Main() {
@@ -48,6 +49,7 @@ export function Main() {
           path="/compensation"
           element={<Compensation/>}
         />
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </>
