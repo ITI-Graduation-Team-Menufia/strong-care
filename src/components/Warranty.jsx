@@ -1,7 +1,7 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import { t } from "i18next";
-export default function FormOne() {
+export default function Warranty() {
   return (
     <div
       className="container-fluid shadow p-3 mt-3 col-12 col-xxl-7 col-xl-7 col-lg-8 col-md-8 col-sm-10"
@@ -83,7 +83,7 @@ export default function FormOne() {
           />
         </div>
 
-        <div className=" mb-4 m-auto w-75">
+        {/* <div className=" mb-4 m-auto w-75">
           <input
             type="date"
             className="form-control is-invalid rounded-0 border-0 border-bottom border-black-50 mb-3"
@@ -92,8 +92,8 @@ export default function FormOne() {
             
           
           />
-          {/* <div className="invalid-feedback"><Trans i18nKey="please-enter"></Trans><Trans i18nKey="purchase-date"></Trans></div> */}
-        </div>
+           <div className="invalid-feedback"><Trans i18nKey="please-enter"></Trans><Trans i18nKey="purchase-date"></Trans></div> 
+        </div> */}
         <div className=" mb-4 m-auto w-75">
           <select className="form-select">
             <option selected>
@@ -106,11 +106,12 @@ export default function FormOne() {
               <Trans i18nKey={"two-year"}></Trans>
             </option>
           </select>
-          
           {/* <div className="invalid text-danger"><Trans i18nKey="please-enter"></Trans><Trans i18nKey="purchase-date"></Trans></div> */}
         </div>
         <div className=" mb-4 m-auto w-75">
           <input
+            readOnly
+            disabled
             type="text"
             className="form-control is-invalid rounded-0 border-0 border-bottom border-black-50 mb-3"
             id="validationServer02"
@@ -121,6 +122,8 @@ export default function FormOne() {
         </div>
         <div className=" mb-4 m-auto w-75">
           <input
+            readOnly
+            disabled
             type="text"
             className="form-control is-invalid rounded-0 border-0 border-bottom border-black-50 mb-3"
             id="validationServer02"
