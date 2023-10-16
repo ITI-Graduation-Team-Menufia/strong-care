@@ -15,18 +15,18 @@ import CompaniesMap from "./companiesmap/CompaniesMap";
 export default function AdminDashboard() {
 
     return (
-        <div className="main">
+        <div className="" style={{minHeight:'100vh', backgroundColor: 'var(--primary-bg)', color:'var(--white-text)'}}>
             <Navbar></Navbar>
-            <div className="Container">
-                <div className="menu-container">
+            <div className="mt-3 d-flex justify-content-between text-light" style={{flex:'1'}}>
+                <div className="px-2 border-end border-light">
                     <Menu></Menu>
                 </div>
-                <div className="content-container">
+                <div className="w-100 m-2 d-flex justify-content-center">
                     <Routes>
                         <Route path='home' element={<Home></Home>}></Route>    
                         <Route path='users' element={<Users></Users>}></Route>
                         <Route path='users/:id' element={<User></User>}></Route>
-                        <Route path='companies' element={<Companies></Companies>}></Route>
+                        <Route path='companies' element={<Companies></Companies>}/>
                         <Route path='companies/:id' element={<Company></Company>}></Route>
                         <Route path="companiesmap" element={<CompaniesMap></CompaniesMap>}></Route>
                         <Route path='warrantycontracts' element={<Contracts/>}></Route>

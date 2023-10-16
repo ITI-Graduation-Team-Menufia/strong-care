@@ -1,4 +1,3 @@
-import "./Users.scss";
 import DataTable from '../../../components/dashboard/shared/DataTable';
 import noAvatarImg from '../../../assets/images/dashboard/noavatar.png';
 // import { usersRows } from '../../../pages/data'; //Static Data

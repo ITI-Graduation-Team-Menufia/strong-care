@@ -1,4 +1,3 @@
-import "./Companies.scss";
 import DataTable from '../../../components/dashboard/shared/DataTable';
 import noAvatarImg from '../../../assets/images/dashboard/noavatar.png';
 // import { companiesRows } from '../../../pages/data'; // Static data
