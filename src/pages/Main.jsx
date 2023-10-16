@@ -13,6 +13,7 @@ import { WarrantyContract } from "../components/WarrantyContract";
 import { ConfirmationCode } from "../components/ConfirmationCode";
 import Warranty from "../components/Warranty";
 import { Compensation } from "../components/Compensation";
+import AboutUs from "../components/AboutUs";
 // import { About, BenefitsOverview, ContactUSForm, OurPartners, Register, Slider } from '../../components/home/index'
 
 export function Main() {
@@ -25,6 +26,7 @@ export function Main() {
         <Route path="/signup" element={<FormOne/>}/>
         <Route path="/signup2" element={<FormTwo/>}/>
         <Route path="/review" element={<Review/>}/>
+        <Route path="/aboutus" element={<AboutUs/>}/>
         <Route
           path="/confirmpassword"
           element={<ConfirmPassword/>}

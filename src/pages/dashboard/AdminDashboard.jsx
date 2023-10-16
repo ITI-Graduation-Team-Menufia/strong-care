@@ -7,7 +7,7 @@ import Companies from "./companies/Companies";
 import PendingRegisterations from './pendingregisterations/PendingRegisterations';
 import Company from "./companies/Company";
 import User from "./users/User";
-import Contracts from "./WarrantyContracts/Contracts";
+import Contracts from './WarrantyContracts/Contracts'
 import Compensations from './compensationRequests/Compensations';
 import Home from './home/Home'
 import Map from './companiesmap/CompaniesMap'
