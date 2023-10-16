@@ -32,6 +32,11 @@ export default function Menu() {
           <i class="fa-solid fa-building"></i>
           <span className="listItemTitle">Companies</span>
         </Link>
+        <Link to='pendingregisterations' className="listItem">
+          {/* <img src={companies} alt="" /> */}
+          <i class="fa-solid fa-pause"></i>
+          <span className="listItemTitle">Pending Registerations</span>
+        </Link>
         <Link to='companiesmap' className="listItem">
           {/* <img src={map} alt="" /> */}
           <i className='fa-solid fa-map'></i>
