@@ -9,7 +9,8 @@ import User from "./users/User";
 import Contracts from "./WarrantyContracts/Contracts";
 import Compensations from './compensationRequests/Compensations';
 import Home from './home/Home'
-import Map from './map/Map'
+import Map from './companiesmap/CompaniesMap'
+import CompaniesMap from "./companiesmap/CompaniesMap";
 
 export default function AdminDashboard() {
 
@@ -27,10 +28,10 @@ export default function AdminDashboard() {
                         <Route path='users/:id' element={<User></User>}></Route>
                         <Route path='companies' element={<Companies></Companies>}></Route>
                         <Route path='companies/:id' element={<Company></Company>}></Route>
-                        <Route path="map" element={<Map></Map>}></Route>
+                        <Route path="companiesmap" element={<CompaniesMap></CompaniesMap>}></Route>
                         <Route path='warrantycontracts' element={<Contracts/>}></Route>
                         <Route path='compensationrequests' element={<Compensations/>}></Route>
-                        <Route path='*' element={<Users></Users>}></Route>
+                        <Route path='*' element={<Home></Home>}></Route>
                     </Routes>
                 </div>
             </div>
