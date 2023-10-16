@@ -1,7 +1,40 @@
 import React from 'react'
+import { useState } from 'react';
 import { Trans } from 'react-i18next'
+import { baseURL } from '../APIs/baseURL';
 
 const SignIn = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const handleLogin = async () => {
+    try {
+      const response = await fetch(`${baseURL}auth/signin`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+  
+      if (response.ok) {
+        const { token } = await response.json();
+        
+        // Store the token in localStorage
+        localStorage.setItem('token', token);
+  
+        // Redirect to the protected route or dashboard
+        window.location.href = '/admindashboard';
+      } else {
+        // Handle authentication error
+        
+      }
+    } catch (error) {
+      // Handle network or other errors
+      console.log(error)
+    }
+  };
+  
+
   return (
     <div className="container">
   <div className="row d-flex justify-content-center my-5">
@@ -11,6 +44,7 @@ const SignIn = () => {
           type="email"
           className="form-control rounded-0 border-0 border-bottom border-black-50 mb-3"
           id="form2Example1"
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <label className="form-label" htmlFor="form2Example1">
@@ -23,6 +57,7 @@ const SignIn = () => {
           type="password"
           className="form-control rounded-0 border-0 border-bottom border-black-50 mb-3"
           id="form2Example2"
+          onChange={(e) => setPassword(e.target.value)}
           required
         />
         <label className="form-label" htmlFor="form2Example2">
@@ -56,6 +91,7 @@ const SignIn = () => {
       <button
         type="button"
         className="request-btn text-white col-4 mb-5"
+        onClick={handleLogin}
       >
         <Trans i18nKey="sign-in"></Trans>
       </button>

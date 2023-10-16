@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, Navbar } from "../components/shared";
-import { Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import { Home } from './home/Home';
 import { SignIn } from "../components/shared/SignIn";
 import { Register } from "../components/home";
@@ -13,6 +13,7 @@ import { WarrantyContract } from "../components/shared/WarrantyContract";
 import { ConfirmationCode } from "../components/ConfirmationCode";
 import Warranty from "../components/Warranty";
 import { Compensation } from "../components/Compensation";
+
 // import { About, BenefitsOverview, ContactUSForm, OurPartners, Register, Slider } from '../../components/home/index'
 
 export function Main() {
@@ -20,8 +21,9 @@ export function Main() {
     <>
       <Navbar></Navbar>
       <Routes>
+      <Route path="/signin" element={<SignIn />} />
+    
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/signin" element={<SignIn></SignIn>}></Route>
         <Route path="/signup" element={<FormOne></FormOne>}></Route>
         <Route path="/signup2" element={<FormTwo></FormTwo>}></Route>
         <Route path="/review" element={<Review></Review>}></Route>

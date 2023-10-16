@@ -1,7 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Trans } from 'react-i18next'
+import { baseURL } from '../../APIs/baseURL';   
 
 export const SignIn = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+   
+    const handleLogin = async () => {
+      try {
+        const response = await fetch(`${baseURL}auth/signin`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        });
+    
+        if (response.ok) {
+          const { token } = await response.json();
+          // Your JWT token
+
+// Split the token into its parts
+            // Split the token into its parts
+        const [header, payload, signature] =await token.split('.');
+
+// Decode the base64-encoded header and payload
+        const decodedHeader = atob(header);
+        const decodedPayload = atob(payload);
+
+// Parse the JSON data in the header and payload
+        const headerData = JSON.parse(decodedHeader);
+        const payloadData = JSON.parse(decodedPayload);
+
+        localStorage.setItem('token', token);
+        console.log('Decoded Header:', headerData);
+        console.log('Decoded Payload:', payloadData);
+        if (payloadData.role ==='admin'){
+
+              window.location.href = '/admindashboard';
+        }else if(payloadData.role ==='company'){
+            window.location.href = '/';
+        }
+
+          
+          // Store the token in localStorage
+    
+          // Redirect to the protected route or dashboard
+        } else {
+          // Handle authentication error
+          
+        }
+      } catch (error) {
+        // Handle network or other errors
+        console.log(error)
+      }
+    };
+    
     return (
         <div className='my-5 p-5'>
         <div className="container-fluid">
@@ -12,6 +66,7 @@ export const SignIn = () => {
                             type="email"
                             className="form-control rounded-0 border-0 border-bottom border-black-50 mb-3"
                             id="form2Example1"
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                         <label className="form-label" htmlFor="form2Example1">
@@ -24,6 +79,7 @@ export const SignIn = () => {
                             type="password"
                             className="form-control rounded-0 border-0 border-bottom border-black-50 mb-3"
                             id="form2Example2"
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                         <label className="form-label" htmlFor="form2Example2">
@@ -57,6 +113,8 @@ export const SignIn = () => {
                         <button
                             type="button"
                             className="request-btn text-white col-4 mb-5"
+                            onClick={handleLogin}
+
                         >
                             <Trans i18nKey="sign-in"></Trans>
                         </button>
