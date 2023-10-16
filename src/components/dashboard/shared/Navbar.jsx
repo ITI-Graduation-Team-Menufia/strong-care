@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container fw-bold">
         <span className="navbar-brand" >
           <img src={logo} alt="Bootstrap" width="70" />
-          <span>Admin Dashboard</span>
+          <span><Trans i18nKey="admin-dashboard"></Trans></span>
         </span>
         <button
           className="navbar-toggler"

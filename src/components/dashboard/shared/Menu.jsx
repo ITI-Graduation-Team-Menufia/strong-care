@@ -6,6 +6,7 @@ import profile from '../../../assets/images/dashboard/profile.svg'
 import companies from '../../../assets/images/dashboard/user.svg'
 import warranty from '../../../assets/images/dashboard/order.svg'
 import compensation from '../../../assets/images/dashboard/log.svg'
+import { Trans } from 'react-i18next';
 
 
 
@@ -20,37 +21,48 @@ export default function Menu() {
         <Link to='home' className="listItem">
           {/* <img src={home} alt="" /> */}
           <i class="fa-solid fa-house"></i>
-          <span className="listItemTitle">Home</span>
+          <span className="listItemTitle">
+            <Trans i18nKey="home"></Trans>
+          </span>
         </Link>
         <Link to='users' className="listItem">
           {/* <img src={profile} alt="" /> */}
           <i class="fa-solid fa-user"></i>
-          <span className="listItemTitle">Users</span>
+          <span className="listItemTitle">
+            <Trans i18nKey="users"></Trans>
+          </span>
         </Link>
         <Link to='companies' className="listItem">
           {/* <img src={companies} alt="" /> */}
           <i class="fa-solid fa-building"></i>
-          <span className="listItemTitle">Companies</span>
+          <span className="listItemTitle">
+            <Trans i18nKey="companies"></Trans>
+          </span>
         </Link>
         <Link to='pendingregisterations' className="listItem">
           {/* <img src={companies} alt="" /> */}
           <i class="fa-solid fa-pause"></i>
-          <span className="listItemTitle">Pending Registerations</span>
+          <span className="listItemTitle">          <Trans i18nKey="pending-registerations"></Trans>
+          </span>
         </Link>
         <Link to='companiesmap' className="listItem">
           {/* <img src={map} alt="" /> */}
           <i className='fa-solid fa-map'></i>
-          <span className="listItemTitle">Map</span>
+          <span className="listItemTitle">
+          <Trans i18nKey="map"></Trans>
+         
+          </span>
         </Link>
         <Link to='warrantycontracts' className="listItem">
           {/* <img src={warranty} alt="" /> */}
           <i class="fa-solid fa-file-signature"></i>
-          <span className="listItemTitle">Warranty Contract Requests</span>
+          <span className="listItemTitle">          <Trans i18nKey="warranty-contract-requests"></Trans>
+</span>
         </Link>
         <Link to='compensationrequests' className="listItem">
           {/* <img src={compensation} alt="" /> */}
           <i class="fa-solid fa-file-contract"></i>
-          <span className="listItemTitle">Compensation Requests</span>
+          <span className="listItemTitle"><Trans i18nKey="compensations-requests"></Trans></span>
         </Link>
       </div>
 

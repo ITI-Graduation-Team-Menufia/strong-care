@@ -3,6 +3,7 @@ import { addNewUser, editUser, getUserById } from '../../../APIs/users';
 import './User.scss';
 import defaultProfilePic from '../../../assets/images/dashboard/profile-pic.jpg';
 import React, { useEffect, useState, useRef } from 'react';
+import { Trans } from 'react-i18next';
 // import useFetch from '../../../hooks/useFetch';
 
 
@@ -101,7 +102,7 @@ export default function User() {
 
   return (
     <div className='user w-100 mt-2 px-3'>
-      <h2 className='text-center'>{id === 'add' ? 'Create New User' : 'User Details'}</h2>
+      <h2 className='text-center'>{id === 'add' ? <Trans i18nKey='add-new-user'/> : <Trans i18nKey='user-details'/>}</h2>
       {!isLoading && <div className="d-flex flex-column flex-sm-row mt-5 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
@@ -139,7 +140,7 @@ export default function User() {
             />
           </div> */}
           <div className="form-group">
-            <label>First Name:</label>
+            <label><Trans i18nKey='first-name'/></label>
             <input
               type="text"
               className="form-control"
@@ -149,7 +150,7 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label>Last Name:</label>
+            <label><Trans i18nKey='last-name'/></label>
             <input
               type="text"
               className="form-control"
@@ -159,22 +160,22 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label>Role:</label>
+            <label><Trans i18nKey='role'/></label>
             <select
               className="form-control"
               name="role"
               value={user?.role}
               onChange={handleInputChange}
             >
-              <option value='' disabled required selected>Choose a role</option>
+              <option value='' disabled required selected><Trans i18nKey='choose-role'/></option>
               {/* <option value={'individual'}>Individual</option> */}
-              <option value={'admin'} selected>Admin</option>
-              <option value={'compensationDepart'}>Compensation Dept.</option>
-              <option value={'requestsDepart'}>Requests Dept.</option>
+              <option value={'admin'} selected><Trans i18nKey='admin'/></option>
+              <option value={'compensationDepart'}><Trans i18nKey='compensations-dept'/></option>
+              <option value={'requestsDepart'}><Trans i18nKey='requests-dept'/></option>
             </select>
           </div>
           <div className="form-group">
-            <label>Verified:</label>
+            <label><Trans i18nKey='verified'/></label>
             <select
               className="form-control"
               name="verified"
@@ -186,7 +187,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label>Verified Email:</label>
+            <label><Trans i18nKey='verified-email'/></label>
             <select
               className="form-control"
               name="verifiedEmail"
@@ -198,7 +199,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label>Verified Phone:</label>
+            <label><Trans i18nKey='verified-phone'/></label>
             <select
               className="form-control"
               name="verifiedPhone"
@@ -210,7 +211,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label>Phone:</label>
+            <label><Trans i18nKey='phone'/></label>
             <input
               type="text"
               className="form-control"
@@ -220,7 +221,7 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label>Email:</label>
+            <label><Trans i18nKey='email'/></label>
             <input
               type="email"
               className="form-control"
@@ -253,7 +254,7 @@ export default function User() {
           </div> */}
 
           <button className="btn btn-success w-50 mt-2 align-self-center" onClick={handleSave} >
-            {id === 'add' ? "Create" : "Save"}
+            {id === 'add' ? (<Trans i18nKey='add'/>) : (<Trans i18nKey='save'/>)}
           </button>
         </div>
       </div>}
