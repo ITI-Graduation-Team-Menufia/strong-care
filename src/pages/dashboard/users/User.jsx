@@ -100,7 +100,7 @@ export default function User() {
   };
 
   return (
-    <div className='user'>
+    <div className='user m-sm-0 p-sm-0'>
       <h2>{id === 'add' ? 'Create New User' : 'User Details'}</h2>
       {!isLoading && <div className="container d-flex flex-column flex-sm-row mt-3 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
