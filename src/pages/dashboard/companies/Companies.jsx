@@ -93,6 +93,10 @@ export default function Companies() {
     companiesRows.forEach(company => {
         delete company?.user;
     });
+    
+    // Filtering Out pending companies
+    //companiesRows = companiesRows.filter((companyRow)=> companyRow.state != 'pending');
+
 
     return (
         <div className="d-flex flex-column gap-2">
