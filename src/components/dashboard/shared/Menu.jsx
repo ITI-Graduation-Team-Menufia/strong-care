@@ -20,28 +20,28 @@ export default function Menu() {
         {/* <span className="title">Admin dashboard</span> */}
         <Link to='home' className="listItem">
           {/* <img src={home} alt="" /> */}
-          <i class="fa-solid fa-house"></i>
+          <i className="fa-solid fa-house"></i>
           <span className="listItemTitle">
             <Trans i18nKey="home"></Trans>
           </span>
         </Link>
         <Link to='users' className="listItem">
           {/* <img src={profile} alt="" /> */}
-          <i class="fa-solid fa-user"></i>
+          <i className="fa-solid fa-user"></i>
           <span className="listItemTitle">
             <Trans i18nKey="users"></Trans>
           </span>
         </Link>
         <Link to='companies' className="listItem">
           {/* <img src={companies} alt="" /> */}
-          <i class="fa-solid fa-building"></i>
+          <i className="fa-solid fa-building"></i>
           <span className="listItemTitle">
             <Trans i18nKey="companies"></Trans>
           </span>
         </Link>
         <Link to='pendingregisterations' className="listItem">
           {/* <img src={companies} alt="" /> */}
-          <i class="fa-solid fa-pause"></i>
+          <i className="fa-solid fa-pause"></i>
           <span className="listItemTitle">          <Trans i18nKey="pending-registerations"></Trans>
           </span>
         </Link>
@@ -55,13 +55,13 @@ export default function Menu() {
         </Link>
         <Link to='warrantycontracts' className="listItem">
           {/* <img src={warranty} alt="" /> */}
-          <i class="fa-solid fa-file-signature"></i>
+          <i className="fa-solid fa-file-signature"></i>
           <span className="listItemTitle">          <Trans i18nKey="warranty-contract-requests"></Trans>
 </span>
         </Link>
         <Link to='compensationrequests' className="listItem">
           {/* <img src={compensation} alt="" /> */}
-          <i class="fa-solid fa-file-contract"></i>
+          <i className="fa-solid fa-file-contract"></i>
           <span className="listItemTitle"><Trans i18nKey="compensations-requests"></Trans></span>
         </Link>
       </div>

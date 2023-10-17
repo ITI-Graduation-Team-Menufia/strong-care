@@ -1,6 +1,5 @@
 import DataTable from '../../../components/dashboard/shared/DataTable';
 import noAvatarImg from '../../../assets/images/dashboard/noavatar.png';
-// import { usersRows } from '../../../pages/data'; //Static Data
 import { Link } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch"; //Custom Hook to fecth all users
 import { getAllUsers } from "../../../APIs/users"; //To be passed to the useFetch custom hook
@@ -8,7 +7,6 @@ import { Trans } from 'react-i18next';
 
 // COLUMNS FOR DATA TABLE
 const columns = [
-    // { field: 'id', type: 'string', headerName: 'ID', width: 100, sortable: false },
     {
         field: 'profileImg', headerName: <Trans i18nKey='profile-img'></Trans>, width: 100, sortable: false,
         renderCell: (params) => {
