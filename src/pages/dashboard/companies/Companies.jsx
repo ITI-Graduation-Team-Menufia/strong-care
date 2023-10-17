@@ -1,13 +1,11 @@
 import DataTable from '../../../components/dashboard/shared/DataTable';
 import noAvatarImg from '../../../assets/images/dashboard/noavatar.png';
-// import { companiesRows } from '../../../pages/data'; // Static data
 import { Link } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch"; //Custom Hook to fecth all companiesTo be passed to the useFetch custom hook
 import { getAllCompanies } from "../../../APIs/companies"; //To be passed to the useFetch custom hook
 
 // COLUMNS FOR DATA TABLE
 const columns = [
-    // { field: 'id', type: 'string', headerName: 'ID', width: 250, sortable: false },
     {
         field: 'profileImg', headerName: 'Profile Img', width: 100, sortable: false,
         renderCell: (params) => {
@@ -95,6 +93,10 @@ export default function Companies() {
     companiesRows.forEach(company => {
         delete company?.user;
     });
+    
+    // Filtering Out pending companies
+    //companiesRows = companiesRows.filter((companyRow)=> companyRow.state != 'pending');
+
 
     return (
         <div className="d-flex flex-column gap-2">
