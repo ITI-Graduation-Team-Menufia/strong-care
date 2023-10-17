@@ -4,35 +4,13 @@ import './Company.scss';
 import DEFAULT_PROFILE_IMAGE from '../../../assets/images/dashboard/profile-pic.jpg';
 import React, { useState, useRef, useEffect } from 'react';
 import { addNewUser } from '../../../APIs/users';
-
-
-// DUMMY DATA
-// let company0 = {
-//   id: 1,
-//   firstName: 'Samsung',
-//   lastName: 'Company',
-//   phone: '1234567890',
-//   email: 'samsung@gmail.com',
-//   location: 'Washington',
-//   profileImg: {url:'https://picsum.photos/400'},
-//   role: 'company',
-//   country: 'USA',
-//   noCommercialRegister: '3132133120',
-//   legalName: 'Samsung',
-//   legalLocation: 'USA, America',
-//   commercialRegisterImg: 'https://picsum.photos/400',
-//   state:'verified',
-//   identificationNo: '021354',
-//   identityImg: 'https://picsum.photos/400',
-// }
+import { Trans } from 'react-i18next';
 
 
 export default function Company() {
-  // set a state for the user to make it interact with the form modifications
   let [company, setCompany] = useState({});
   let [isLoading, setIsLoading] = useState();
 
-  // Get company Id from the url (params)
   let { id } = useParams();
 
   useEffect(() => {
@@ -68,7 +46,6 @@ export default function Company() {
     const { name, value } = event.target;
     setCompany({ ...company, [name]: value });
     // HANDLE SETTING THE ATTACHED IMAGE ON THE USER
-    console.log(name, value);
   };
 
 
@@ -84,8 +61,6 @@ export default function Company() {
 
 
     const handleSave = async () => {
-
-
     const userData = new FormData();
     userData.append('firstName', 'شركة');
     userData.append('lastName', company.lastName);
@@ -132,7 +107,7 @@ export default function Company() {
 
   return (
     <div className='company w-100 mt-2 px-3'>
-      <h2 className='text-center'>{id === 'add' ? 'Create New Company' : 'Company Details'}</h2>
+      <h2 className='text-center'>{id === 'add' ? <Trans i18nKey='add-new-company' /> : <Trans i18nKey='company-details' />}</h2>
       {!isLoading && <div className="d-flex flex-column flex-sm-row mt-5 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
@@ -179,7 +154,7 @@ export default function Company() {
             />
           </div> */}
           <div className="form-group">
-            <label>First Name:</label>
+            <label><Trans i18nKey='first-name' /></label>
             <input
               type="text"
               className="form-control"
@@ -189,7 +164,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Last Name:</label>
+            <label><Trans i18nKey='last-name' /></label>
             <input
               type="text"
               className="form-control"
@@ -199,7 +174,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Verified:</label>
+            <label><Trans i18nKey='verified' /></label>
             <select disabled
               className="form-control"
               name="verified"
@@ -211,7 +186,7 @@ export default function Company() {
             </select>
           </div>
           <div className="form-group">
-            <label>Verified Email:</label>
+            <label><Trans i18nKey='verified-email' /></label>
             <select disabled
               className="form-control"
               name="verifiedEmail"
@@ -223,7 +198,7 @@ export default function Company() {
             </select>
           </div>
           <div className="form-group">
-            <label>Verified Phone:</label>
+            <label><Trans i18nKey='verified-phone' /></label>
             <select disabled
               className="form-control"
               name="verifiedPhone"
@@ -235,7 +210,7 @@ export default function Company() {
             </select>
           </div>
           <div className="form-group">
-            <label>Phone:</label>
+            <label><Trans i18nKey='phone' /></label>
             <input
               type="text"
               className="form-control"
@@ -245,7 +220,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Email:</label>
+            <label><Trans i18nKey='email' /></label>
             <input
               type="email"
               className="form-control"
@@ -255,7 +230,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Location:</label>
+            <label><Trans i18nKey='location' /></label>
             <input
               type="text"
               className="form-control"
@@ -287,7 +262,7 @@ export default function Company() {
             />
           </div> */}
           <div className="form-group">
-            <label>Country:</label>
+            <label><Trans i18nKey='country'/></label>
             <input
               type="text"
               className="form-control"
@@ -297,7 +272,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>No. Commercial Register:</label>
+            <label><Trans i18nKey='commercial-registeration-no'/></label>
             <input
               type="text"
               className="form-control"
@@ -307,7 +282,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Legal Name:</label>
+            <label><Trans i18nKey='legal-name'/></label>
             <input
               type="text"
               className="form-control"
@@ -317,7 +292,7 @@ export default function Company() {
             />
           </div>
           <div className="form-group">
-            <label>Legal Location:</label>
+            <label><Trans i18nKey='legal-office'/></label>
             <input
               type="text"
               className="form-control"
@@ -329,7 +304,7 @@ export default function Company() {
           </div>
           {/* Commercial register image */}
           <div className="form-group">
-            <label>Commercial Register Img:</label>
+            <label><Trans i18nKey='commercial-registeration-img'/></label>
             <input
                 type="file"
                 id="file-input"
@@ -351,7 +326,7 @@ export default function Company() {
             />
           </div> */}
           <div className="form-group">
-            <label>Identification Number:</label>
+            <label><Trans i18nKey='agent-identification-number'/></label>
             <input
             disabled
               type="text"
@@ -363,7 +338,7 @@ export default function Company() {
           </div>
           {/* Identity Img */}
           <div className="form-group">
-            <label>Identity Img:</label>
+            <label><Trans i18nKey='identity-img'/></label>
             <input
                 type="file"
                 id="file-input"
@@ -374,7 +349,7 @@ export default function Company() {
               />
           </div>
           <button className="btn btn-success w-50 mt-2 align-self-center" onClick={handleSave}>
-            Save
+          {id === 'add' ? (<Trans i18nKey='add' />) : (<Trans i18nKey='save' />)}
           </button>
         </div>
 

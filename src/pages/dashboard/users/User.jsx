@@ -5,26 +5,12 @@ import defaultProfilePic from '../../../assets/images/dashboard/profile-pic.jpg'
 import React, { useEffect, useState, useRef } from 'react';
 import { Trans } from 'react-i18next';
 // import useFetch from '../../../hooks/useFetch';
+// import { createUserSchema, updateUserSchema } from './user.validation';
 
-
-// DUMMY DATA
-// let user0 = {
-//   id: 1,
-//   firstName: 'John',
-//   lastName: 'Doe',
-//   phone: '1234567890',
-//   email: 'john.doe@example.com',
-//   location: 'New York',
-//   img: 'https://picsum.photos/400',
-//   role: 'Administrator',
-// }
 
 export default function User() {
-  // set a state for the user to make it interact with the form modifications
   let [user, setUser] = useState({});
   let [isLoading, setIsLoading] = useState();
-
-  // Get user Id from the url (params)
   let { id } = useParams();
 
   useEffect(() => {
@@ -39,8 +25,7 @@ export default function User() {
       }
     };
 
-
-    if(id !== 'add'){
+    if (id !== 'add') {
       fetchData();
     }
   }, [id]);
@@ -66,6 +51,20 @@ export default function User() {
     setSelectedImage(file);
   }
 
+
+
+  // const validateUserData = (userData, schema) => {
+  //   const { error } = schema.validate(userData, { abortEarly: false });
+  //   if (error) {
+  //     // Handle validation errors here, for example, by displaying error messages to the user.
+  //     console.log(error.details);
+  //     return false; // Validation failed
+  //   }
+  //   return true; // Validation succeeded
+  // };
+
+
+
   const handleSave = async () => {
     const data = new FormData();
     data.append('firstName', user.firstName);
@@ -75,20 +74,32 @@ export default function User() {
     data.append('longitude', '123.456');
 
 
-    if(id === 'add'){
+    if (id === 'add') {
       data.append('role', user.role || 'admin');
       data.append('phone', user.phone);
       data.append('email', user.email);
       data.append('password', '12345678'); //Static Password for each new user
     }
 
+
+    // // Validate the user data based on the 'createUserSchema' or 'createAdminUserSchema'
+    // const isValidData = id === 'add'
+    //   ? validateUserData(user, createUserSchema)
+    //   : validateUserData(user, updateUserSchema);
+
+    // if (!isValidData) {
+    //   // Handle validation errors and return if the data is invalid.
+    //   return;
+    // }
+
+
     // Send to BackEnd
     try {
-      if(id === 'add'){
+      if (id === 'add') {
         console.log('ADD', data);
         await addNewUser(data, user.role);
       }
-      else{
+      else {
         console.log('Edit', data);
         await editUser(id, data);
       }
@@ -102,7 +113,7 @@ export default function User() {
 
   return (
     <div className='user w-100 mt-2 px-3'>
-      <h2 className='text-center'>{id === 'add' ? <Trans i18nKey='add-new-user'/> : <Trans i18nKey='user-details'/>}</h2>
+      <h2 className='text-center'>{id === 'add' ? <Trans i18nKey='add-new-user' /> : <Trans i18nKey='user-details' />}</h2>
       {!isLoading && <div className="d-flex flex-column flex-sm-row mt-5 gap-2">
         <div className='d-flex flex-column col-12 col-sm-5 gap-3 align-items-center'>
           <div className="image-container">
@@ -140,7 +151,7 @@ export default function User() {
             />
           </div> */}
           <div className="form-group">
-            <label><Trans i18nKey='first-name'/></label>
+            <label><Trans i18nKey='first-name' /></label>
             <input
               type="text"
               className="form-control"
@@ -150,7 +161,7 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='last-name'/></label>
+            <label><Trans i18nKey='last-name' /></label>
             <input
               type="text"
               className="form-control"
@@ -160,22 +171,22 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='role'/></label>
+            <label><Trans i18nKey='role' /></label>
             <select
               className="form-control"
               name="role"
               value={user?.role}
               onChange={handleInputChange}
             >
-              <option value='' disabled required selected><Trans i18nKey='choose-role'/></option>
+              <option value='' disabled required selected><Trans i18nKey='choose-role' /></option>
               {/* <option value={'individual'}>Individual</option> */}
-              <option value={'admin'} selected><Trans i18nKey='admin'/></option>
-              <option value={'compensationDepart'}><Trans i18nKey='compensations-dept'/></option>
-              <option value={'requestsDepart'}><Trans i18nKey='requests-dept'/></option>
+              <option value={'admin'} selected><Trans i18nKey='admin' /></option>
+              <option value={'compensationDepart'}><Trans i18nKey='compensations-dept' /></option>
+              <option value={'requestsDepart'}><Trans i18nKey='requests-dept' /></option>
             </select>
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='verified'/></label>
+            <label><Trans i18nKey='verified' /></label>
             <select
               className="form-control"
               name="verified"
@@ -187,7 +198,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='verified-email'/></label>
+            <label><Trans i18nKey='verified-email' /></label>
             <select
               className="form-control"
               name="verifiedEmail"
@@ -199,7 +210,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='verified-phone'/></label>
+            <label><Trans i18nKey='verified-phone' /></label>
             <select
               className="form-control"
               name="verifiedPhone"
@@ -211,7 +222,7 @@ export default function User() {
             </select>
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='phone'/></label>
+            <label><Trans i18nKey='phone' /></label>
             <input
               type="text"
               className="form-control"
@@ -221,7 +232,7 @@ export default function User() {
             />
           </div>
           <div className="form-group">
-            <label><Trans i18nKey='email'/></label>
+            <label><Trans i18nKey='email' /></label>
             <input
               type="email"
               className="form-control"
@@ -254,7 +265,7 @@ export default function User() {
           </div> */}
 
           <button className="btn btn-success w-50 mt-2 align-self-center" onClick={handleSave} >
-            {id === 'add' ? (<Trans i18nKey='add'/>) : (<Trans i18nKey='save'/>)}
+            {id === 'add' ? (<Trans i18nKey='add' />) : (<Trans i18nKey='save' />)}
           </button>
         </div>
       </div>}

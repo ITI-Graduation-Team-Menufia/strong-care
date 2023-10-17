@@ -26,6 +26,7 @@
     "bootstrap-icons": "^1.11.1",
     "framer-motion": "^10.16.4",
     "i18next": "^23.5.1",
+    "joi": "^17.11.0",
     "mdb-react-ui-kit": "^6.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",

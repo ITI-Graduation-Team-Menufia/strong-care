@@ -8,7 +8,7 @@ import { Trans } from 'react-i18next';
 // COLUMNS FOR DATA TABLE
 const columns = [
     {
-        field: 'profileImg', headerName: <Trans i18nKey='profile-img'></Trans>, width: 100, sortable: false,
+        field: 'profileImg', headerName: <Trans i18nKey='profile-img'/>, width: 100, sortable: false,
         renderCell: (params) => {
             return <img src={params.row.profileImg.url
                 || noAvatarImg} alt="" />

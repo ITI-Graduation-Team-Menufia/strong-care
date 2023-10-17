@@ -118,5 +118,13 @@
   "requests-dept": "قسم الضمانات",
   "compensations-dept":"قسم التعويضات",
   "add":"إضافة",
-  "save":"حفظ"
+  "save":"حفظ",
+  "company-details":"تفاصيل الشركة",
+  "add-new-company": "إضافة شركة جديدة",
+  "location":"الموقع",
+  "country": "البلد",
+  "commercial-registeration-no":"رقم السجل التجاري",
+  "commercial-registeration-img":"صورة السجل التجاري",
+  "identity-img":"صورة الهوية",
+  "state":"حالة القبول"
 }

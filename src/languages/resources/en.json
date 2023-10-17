@@ -116,5 +116,14 @@
   "requests-dept":"Requests Department",
   "compensations-dept":"Compensations Department",
   "add":"Add",
-  "save":"Save"
+  "save":"Save",
+  "company-details":"Company Details",
+  "add-new-company":"Add New Company",
+  "location":"Location",
+  "country": "Country",
+  "commercial-registeration-no":"Commercial Registeration No.",
+  "commercial-registeration-img":"Commercial Registeration Img",
+  "identity-img":"Identity Image",
+  "state":"State"
+
 }
