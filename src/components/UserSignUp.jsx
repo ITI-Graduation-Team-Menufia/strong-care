@@ -5,7 +5,7 @@ import Joi from 'joi';
 import axios from "axios";
 import { baseURL } from "../APIs/baseURL";
 
-export function FormOne() {
+export function UserSignUp() {
   const phonePattern = /^[0-9]{11}$/;
   
   const [profileImg, setProfileImg] = useState(null);
@@ -110,7 +110,7 @@ export function FormOne() {
             className={`form-control ${errors.lastName ? "is-invalid" : ""} rounded-0 border-0 border-bottom border-black-50 mb-3`}
             id="validationServer01"
             required
-            placeholder={t("company-name")}
+            placeholder={t("name")}
             name="lastName"
             value={formData.lastName}
             onChange={handleInputChange}
@@ -118,7 +118,7 @@ export function FormOne() {
           {errors.lastName && (
             <div className="invalid-feedback text-danger">
               <Trans i18nKey="please-enter"></Trans>
-              <Trans i18nKey="valid-company-name"></Trans>
+              <Trans i18nKey="valid-name"></Trans>
             </div>
           )}
         </div>
@@ -146,7 +146,7 @@ export function FormOne() {
             className={`form-control ${errors.email ? "is-invalid" : ""} rounded-0 border-0 border-bottom border-black-50 mb-3`}
             id="validationServer03"
             required
-            placeholder={t("company-email")}
+            placeholder={t("email")}
             name="email"
             value={formData.email}
             onChange={handleInputChange}

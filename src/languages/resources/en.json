@@ -91,5 +91,14 @@
   "device-serial-number":"Device Serial Number", 
   "purchase-date":"Purchase Date", 
   "agent identification number":"Agent Identification Number", 
-  "shop-name":"Shop Name"
+  "shop-name":"Shop Name",
+  "valid-company-name":"Company Name with at least 3 letters",
+  "valid-phone-number":"Phone Number consisting of 11 digits.",
+  "valid-email":"Valid Email Address.",
+  "valid-password":"A strong password consisting of at least 8 characters.",
+  "valid-confirm-password": "Please confirm the password.",
+  "user-phone":"Phone Number",
+  "valid-name":"Name with at least 3 letters"
+
+
 }

@@ -93,5 +93,14 @@
   "client-phone": "رقم الهاتف الخاص بالعميل",
   "agent-identification-number": "رقم الوكيل التعريفي",
   "shop-name": "أسم المحل",
-  "create": "إنشاء"
+  "create": "إنشاء",
+  "valid-company-name":"اسم الشركة المكون من 3 احرف علي الاقل",
+  "valid-phone-number":"رقم الهاتف المكون من 11 رقم",
+  "valid-email":"بريد الكتروني صحيح",
+  "valid-password":"كلمة مرور قوية مكونة من 8 علي الاقل",
+  "valid-confirm-password":"يرجى تأكيد كلمة المرور",
+  "user-phone":"رقم الهاتف",
+  "valid-name":"الاسم  مكون من 3 احرف علي الاقل"
+
+
 }

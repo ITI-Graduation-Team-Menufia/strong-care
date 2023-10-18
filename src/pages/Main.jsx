@@ -6,6 +6,7 @@ import { SignIn } from "../components/shared/SignIn";
 import { Register } from "../components/home";
 import { FormOne } from "../components/FormOne";
 import { FormTwo } from "../components/FormTwo";
+import {UserSignUp} from '../components/UserSignUp'
 import { Review } from "../components/Review";
 import { ConfirmPassword } from "../components/shared/ConfirmPassword";
 import { ForgotPassword } from "../components/shared/ForgotPassword";
@@ -27,6 +28,7 @@ export function Main() {
         <Route path="/signup" element={<FormOne></FormOne>}></Route>
         <Route path="/signup2" element={<FormTwo></FormTwo>}></Route>
         <Route path="/review" element={<Review></Review>}></Route>
+        <Route path="/usersignup" element={<UserSignUp></UserSignUp>}></Route>
         <Route
           path="/confirmpassword"
           element={<ConfirmPassword></ConfirmPassword>}

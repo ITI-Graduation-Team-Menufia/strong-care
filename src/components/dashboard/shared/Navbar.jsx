@@ -3,11 +3,13 @@ import './Navbar.scss'
 import logo from '../../../assets/images/logo.png';
 import notifications from '../../../assets/images/dashboard/notifications.svg';
 import { useNavigate } from 'react-router-dom';
-import { baseURL } from '../../../APIs/baseURL';import { Trans } from "react-i18next";
+import { baseURL } from '../../../APIs/baseURL';
+import { Trans } from "react-i18next";
+import { useUserAPI } from '../../../guards/useUserAPI';
 
 export default function Navbar() {
-  const [shouldFetch, setShouldFetch] = useState(true);
   
+ 
   const navigate = useNavigate();
   const handleLogout = () => {
     // Clear the JWT from local storage or cookies
@@ -19,6 +21,7 @@ export default function Navbar() {
     navigate('/signin');
   };
   const token = localStorage.getItem("token"); // Replace 'token' with the key you use to store the JWT
+  
     if(!token){
       return false;
     }else {
@@ -33,23 +36,12 @@ export default function Navbar() {
               const payloadData = JSON.parse(decodedPayload);
               console.log(payloadData);
               
-    }
-    const handleUser = async (id) => {
-      try {
-        const response = await fetch(`${baseURL}/users/${id}`, {
-          method: 'GET',
-          headers: { 'Content-Type': 'application/json' },
-        });
-        if (response.ok) {
-          const data = await response.json(); // Parse the response data
-          console.log(data); // Log the response data
-        } else {
-          console.log('Request failed with status:', response.status);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
+              // const { userData, loading, error } = this.useUserAPI(this.payloadData.id);
+              // console.log(userData);
+              
+            }
+    
+    
   
   return (
     // Old nav
