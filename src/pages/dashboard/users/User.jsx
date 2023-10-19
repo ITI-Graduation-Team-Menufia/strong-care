@@ -3,6 +3,7 @@ import { addNewUser, editUser, getUserById } from '../../../APIs/users';
 import './User.scss';
 import defaultProfilePic from '../../../assets/images/dashboard/profile-pic.jpg';
 import React, { useEffect, useState, useRef } from 'react';
+import Map from '../companies/Map';
 // import useFetch from '../../../hooks/useFetch';
 
 
@@ -70,8 +71,8 @@ export default function User() {
     data.append('firstName', user.firstName);
     data.append('lastName', user.lastName);
     data.append('profileImg', selectedImage);
-    data.append('latitude', '123.456'); //Testing purposes for now
-    data.append('longitude', '123.456');
+    data.append('latitude', latitude); //Testing purposes for now
+    data.append('longitude', longitude);
 
 
     if(id === 'add'){
@@ -98,7 +99,25 @@ export default function User() {
     console.log('User data to be saved:');
     console.log(data);
   };
+  /////////location
 
+  const [showMap, setShowMap] = useState(false);
+  const [chosenLocation, setChosenLocation] = useState(null);
+  const [latitude, setLatitude] = useState(0);
+  const [longitude, setLongitude] = useState(0);
+
+  const handleCoordinatesChange = (lat, lng) => {
+    setLatitude(lat);
+    setLongitude(lng);
+  };
+
+  const handleMapClick = (e) => {
+    setChosenLocation(e.latlng);
+  };
+
+  const handleButtonClick = () => {
+    setShowMap(true);
+  };
   return (
     <div className='user'>
       <h2>{id === 'add' ? 'Create New User' : 'User Details'}</h2>
@@ -229,6 +248,30 @@ export default function User() {
               onChange={handleInputChange}
             />
           </div>
+          <div className="form-group">
+              <label>Location:</label>
+              <div>
+                <button
+                  className="btn btn-outline-light form-control"
+                  onClick={handleButtonClick}
+                >
+                  Choose Your Location
+                </button>
+                {showMap && (
+                  <Map
+                    onCoordinatesChange={handleCoordinatesChange}
+                    className="map"
+                    style={{ height: "250px" }}
+                    center={[24.774265, 46.738586]}
+                    zoom={5}
+                    onClick={handleMapClick}
+                    chosenLocation={chosenLocation}
+                  />
+                )}
+                <p>Latitude: {latitude}</p>
+                {/* <p>Longitude: {longitude}</p>    */}
+              </div>
+            </div>
           {/* <div className="form-group">
             <label>Location:</label>
             <input

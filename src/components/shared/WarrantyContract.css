@@ -1,5 +1,6 @@
 .Container{
-  /* height: 1100px !important */
+  /* height: 1100px !important; */
+min-height: 1100px !important
 }
 
 .background-img {

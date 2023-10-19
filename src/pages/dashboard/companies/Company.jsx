@@ -108,12 +108,14 @@ export default function Company() {
     companyData.append("noCommercialRegister", company.noCommercialRegister);
     companyData.append("commission", company.commission);
     companyData.append("legalName", company.legalName);
+    companyData.append("latitude", latitude);  
+    companyData.append("longitude", longitude)
     companyData.append(
       "commercialRegisterImg",
       selectedCommercialRegisterImage
     );
     companyData.append("identityImg", selectedIdentityImage);
-
+    
     // Send to BackEnd
     try {
       if (id === "add") {
@@ -130,8 +132,9 @@ export default function Company() {
     }
 
     console.log("Company data to be saved:");
+    console.log(companyData)
+    console.log(longitude)
   };
-
   /////////location
 
   const [showMap, setShowMap] = useState(false);
@@ -304,7 +307,7 @@ export default function Company() {
                     chosenLocation={chosenLocation}
                   />
                 )}
-                {/* <p>Latitude: {latitude}</p> */}
+                <p>Latitude: {latitude}</p>
                 {/* <p>Longitude: {longitude}</p>    */}
               </div>
             </div>

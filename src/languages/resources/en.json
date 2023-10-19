@@ -91,5 +91,24 @@
   "device-serial-number":"Device Serial Number", 
   "purchase-date":"Purchase Date", 
   "agent identification number":"Agent Identification Number", 
-  "shop-name":"Shop Name"
+  "shop-name":"Shop Name",
+  "warranty-contract-number":" Warranty Contract Number ",
+  "companies-number":"Companies Number",
+  "users-number":"Users Number ",
+  "requests-number":"Requests Number",
+  "pending-requests":" Pending Requests",
+  "active-partners":"Our active partners",
+  "income":"Gross income", 
+  "month" :"  Month",
+  "profits":" Profits",
+  "user":"User",
+  "action": "Action",
+  "location":" Location", 
+  "country":"Country",
+  "company": "الشركة",
+  "admin-in-request-department":"Admin In Requests Department",
+  "admin-in-compensation-department":"Admin In Compensation Department"
+
+
+
 }

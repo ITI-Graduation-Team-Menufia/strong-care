@@ -93,5 +93,23 @@
   "client-phone": "رقم الهاتف الخاص بالعميل",
   "agent-identification-number": "رقم الوكيل التعريفي",
   "shop-name": "أسم المحل",
-  "create": "إنشاء"
+  "create": "إنشاء", 
+  "warranty-contract-number":"عدد عقود الضمان",
+  "companies-number":"عدد الشركات",
+  "users-number":"عدد المستخدمين ",
+  "requests-number":"عدد الطلبات ",
+  "pending-requests":" عدد الطلبات المعلقة ",
+  "active-partners":"انشط شركائنا",
+  "income":"إجمالي الدخل ",
+  "month" :"  الشهر",
+  "profits":" الارباح",
+  "user":"المستخدم",
+  "action": "الاستجابه",
+  "location":"الموقع الجغرافي", 
+  "country":"البلد", 
+  "admin-in-request-department":"مسئول في قسم الطلبات",
+  "admin-in-compensation-department":"مسئول في قسم التعويضات"
+
+
+
 }
