@@ -307,7 +307,7 @@ export default function Company() {
                     chosenLocation={chosenLocation}
                   />
                 )}
-                <p>Latitude: {latitude}</p>
+                {/* <p>Latitude: {latitude}</p> */}
                 {/* <p>Longitude: {longitude}</p>    */}
               </div>
             </div>

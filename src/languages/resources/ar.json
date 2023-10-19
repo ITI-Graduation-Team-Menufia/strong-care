@@ -108,7 +108,9 @@
   "location":"الموقع الجغرافي", 
   "country":"البلد", 
   "admin-in-request-department":"مسئول في قسم الطلبات",
-  "admin-in-compensation-department":"مسئول في قسم التعويضات"
+  "admin-in-compensation-department":"مسئول في قسم التعويضات",
+  "company":"الشركة",
+  "idNumber": "الرقم التعريفي"
 
 
 

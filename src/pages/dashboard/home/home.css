@@ -1,9 +1,9 @@
-@media (screen) {
+/* @media (screen) {
   .income-partners{
     max-height: 450px;
      height: 100%
-  }
-}
+  } */
+/* } */
 .flip-card {
   background-color: transparent;
   height: 140px;
@@ -29,3 +29,25 @@ position: absolute;
 .flip-card-back {
   transform: rotateY(180deg);
 }
+ @media (max-width: 768px) {
+  .income-partners{
+    display: grid !important;
+    grid-template-columns: 1fr;
+    padding-top: 0px !important;
+    margin-top: 0 !important
+  }
+
+  .income-pending{
+    grid-row: 1/2 !important;
+    height: 480px;
+  }
+  .income{
+    grid-row: 2/3 !important;  
+  }
+  .pending-requests .card-body{
+    height: 160px;
+    padding: 8px;
+  }.active-clients{
+    /* grid-row: 3/4; */
+  }
+ }
