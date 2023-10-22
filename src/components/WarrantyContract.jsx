@@ -1,8 +1,8 @@
 import React from 'react'
 import './WarrantyContract.css'
-import vatLogo from '../../assets/images/Vat-logo.svg';
-import qrCode from '../../assets/images/qr-code.svg';
-import logo from '../../assets/images/logo.png'
+import vatLogo from '../assets/images/Vat-logo.svg';
+import qrCode from '../assets/images/qr-code.svg';
+import logo from '../assets/images/logo.png'
 
 export const WarrantyContract = () => {
   return (

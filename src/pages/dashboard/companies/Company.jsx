@@ -34,7 +34,6 @@ import Map from "./Map";
 // }
 
 export default function Company() {
-  // set a state for the user to make it interact with the form modifications
   let [company, setCompany] = useState({});
   let [isLoading, setIsLoading] = useState();
   // Get company Id from the url (params)
@@ -72,7 +71,6 @@ export default function Company() {
     const { name, value } = event.target;
     setCompany({ ...company, [name]: value });
     // HANDLE SETTING THE ATTACHED IMAGE ON THE USER
-    console.log(name, value);
   };
 
   // For uploading images

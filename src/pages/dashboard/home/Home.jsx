@@ -8,14 +8,13 @@ import {
   faArrowTrendDown,
   faArrowTrendUp,
   faBuilding,
-  faCheck,
   faCommentsDollar,
   faFileLines,
   faHourglassHalf,
   faUser,
   faUsersBetweenLines,
   faUsersGear,
-  faX,
+  
 } from "@fortawesome/free-solid-svg-icons";
 import CanvasJSReact from "@canvasjs/react-charts";
 import { t } from "i18next";
@@ -333,7 +332,6 @@ export default function Home() {
             </div>
             </div>
           </div>
-          {/* the Third Line */}
 
     </motion.div>
   );
